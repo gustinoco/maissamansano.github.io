@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +21,9 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="#home" className="text-xl md:text-2xl font-semibold text-primary">
-            Dra. Maissa Mansano
+          <a href="#home" className="flex items-center gap-2">
+            <img src={logo} alt="Logo" className="h-10 md:h-12 w-auto" />
+            <span className="text-xl md:text-2xl font-semibold text-primary">Maissa Mansano</span>
           </a>
 
           {/* Desktop Navigation */}
