@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "Qual a área de atendimento?",
-    answer: "Atendo em [Cidade/Região]. Para verificar se sua localização está na área de cobertura, entre em contato pelo WhatsApp ou formulário de contato."
+    answer: "Atendo em Ponta Porã - MS (Brasil) e Pedro Juan Caballero (Paraguai). Para verificar se sua localização está na área de cobertura, entre em contato pelo WhatsApp."
   },
   {
     question: "Como é feito o pagamento?",
