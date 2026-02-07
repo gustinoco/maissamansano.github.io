@@ -1,26 +1,29 @@
 import { CheckCircle, MapPin, Shield, Users } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const WhyHomeCareSection = () => {
+  const { t } = useLanguage();
+
   const benefits = [
     {
       icon: MapPin,
-      title: "Sem Deslocamento",
-      description: "Você não precisa enfrentar trânsito, estacionamento ou transporte público. O tratamento vem até você."
+      title: t.whyHomeCare.benefit1Title,
+      description: t.whyHomeCare.benefit1Desc
     },
     {
       icon: Shield,
-      title: "Ambiente Seguro",
-      description: "Seu lar oferece um ambiente familiar e confortável, ideal para a recuperação e tratamento contínuo."
+      title: t.whyHomeCare.benefit2Title,
+      description: t.whyHomeCare.benefit2Desc
     },
     {
       icon: Users,
-      title: "Família Presente",
-      description: "Familiares podem acompanhar o tratamento, aprender exercícios e participar ativamente da recuperação."
+      title: t.whyHomeCare.benefit3Title,
+      description: t.whyHomeCare.benefit3Desc
     },
     {
       icon: CheckCircle,
-      title: "Equipamentos Adaptados",
-      description: "Utilizamos equipamentos portáteis profissionais, garantindo a mesma qualidade de uma clínica."
+      title: t.whyHomeCare.benefit4Title,
+      description: t.whyHomeCare.benefit4Desc
     }
   ];
 
@@ -30,11 +33,10 @@ const WhyHomeCareSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Por que escolher o Home Care?
+              {t.whyHomeCare.title}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              O atendimento domiciliar oferece vantagens únicas que potencializam 
-              os resultados do seu tratamento fisioterapêutico.
+              {t.whyHomeCare.description}
             </p>
           </div>
 
@@ -59,9 +61,7 @@ const WhyHomeCareSection = () => {
 
           <div className="mt-12 bg-primary/5 border border-primary/20 rounded-xl p-6 md:p-8">
             <p className="text-center text-foreground">
-              <strong className="text-primary">Importante:</strong> O atendimento Home Care não é uma alternativa inferior 
-              à clínica — é uma escolha inteligente para quem busca conveniência, conforto e resultados. 
-              Todos os protocolos e técnicas utilizados seguem os mesmos padrões de excelência.
+              <strong className="text-primary">{t.whyHomeCare.important}</strong> {t.whyHomeCare.importantText}
             </p>
           </div>
         </div>
