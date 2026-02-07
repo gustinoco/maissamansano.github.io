@@ -1,10 +1,12 @@
 import { Mail, MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ContactSection = () => {
-  const whatsappNumber = "5511999999999"; // Substituir pelo número real
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de agendar uma avaliação de fisioterapia domiciliar.");
+  const { t } = useLanguage();
+  const whatsappNumber = "595981345476";
+  const whatsappMessage = encodeURIComponent(t.contact.whatsappMessage);
 
   return (
     <section id="contato" className="py-20 bg-secondary/50">
@@ -12,11 +14,10 @@ const ContactSection = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Entre em Contato
+              {t.contact.title}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Agende sua avaliação ou tire suas dúvidas. Estou pronta para ajudar você 
-              a recuperar sua qualidade de vida.
+              {t.contact.description}
             </p>
           </div>
 
@@ -30,8 +31,8 @@ const ContactSection = () => {
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Telefone / WhatsApp</h3>
-                      <p className="text-muted-foreground">(11) 99999-9999</p>
+                      <h3 className="font-semibold text-foreground mb-1">{t.contact.phone}</h3>
+                      <p className="text-muted-foreground">+595 981 345476</p>
                     </div>
                   </div>
                 </CardContent>
@@ -44,7 +45,7 @@ const ContactSection = () => {
                       <Mail className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">E-mail</h3>
+                      <h3 className="font-semibold text-foreground mb-1">{t.contact.email}</h3>
                       <p className="text-muted-foreground">contato@fisiohomecare.com.br</p>
                     </div>
                   </div>
@@ -58,7 +59,7 @@ const ContactSection = () => {
                       <MapPin className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Área de Atendimento</h3>
+                      <h3 className="font-semibold text-foreground mb-1">{t.contact.area}</h3>
                       <p className="text-muted-foreground">Ponta Porã - MS (Brasil)</p>
                       <p className="text-muted-foreground">Pedro Juan Caballero (Paraguai)</p>
                     </div>
@@ -73,9 +74,9 @@ const ContactSection = () => {
                       <Clock className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Horário de Atendimento</h3>
-                      <p className="text-muted-foreground">Segunda a Sexta: 8h às 18h</p>
-                      <p className="text-muted-foreground">Sábado: 8h às 12h</p>
+                      <h3 className="font-semibold text-foreground mb-1">{t.contact.hours}</h3>
+                      <p className="text-muted-foreground">{t.contact.hoursWeekday}</p>
+                      <p className="text-muted-foreground">{t.contact.hoursSaturday}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -89,11 +90,10 @@ const ContactSection = () => {
                   <div className="text-center">
                     <MessageCircle className="h-16 w-16 mx-auto mb-6 opacity-90" />
                     <h3 className="text-2xl font-bold mb-4">
-                      Agende pelo WhatsApp
+                      {t.contact.whatsappTitle}
                     </h3>
                     <p className="mb-6 opacity-90">
-                      A forma mais rápida e prática de agendar sua avaliação. 
-                      Respondo em até 2 horas em dias úteis.
+                      {t.contact.whatsappDesc}
                     </p>
                     <Button 
                       size="lg" 
@@ -106,7 +106,7 @@ const ContactSection = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Enviar Mensagem
+                        {t.contact.whatsappButton}
                       </a>
                     </Button>
                   </div>

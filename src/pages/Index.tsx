@@ -6,19 +6,24 @@ import AboutSection from "@/components/AboutSection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <HeroSection />
-      <WhyHomeCareSection />
-      <ServicesSection />
-      <AboutSection />
-      <FAQSection />
-      <ContactSection />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen">
+        <Header />
+        <HeroSection />
+        <WhyHomeCareSection />
+        <ServicesSection />
+        <AboutSection />
+        <FAQSection />
+        <ContactSection />
+        <Footer />
+        <FloatingWhatsApp />
+      </div>
+    </LanguageProvider>
   );
 };
 

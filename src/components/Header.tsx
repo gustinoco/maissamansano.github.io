@@ -1,17 +1,20 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#servicos", label: "Serviços" },
-  { href: "#sobre", label: "Sobre Mim" },
-  { href: "#duvidas", label: "Dúvidas" },
-  { href: "#contato", label: "Contato" },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
+
+  const navLinks = [
+    { href: "#home", label: t.nav.home },
+    { href: "#servicos", label: t.nav.services },
+    { href: "#sobre", label: t.nav.about },
+    { href: "#duvidas", label: t.nav.faq },
+    { href: "#contato", label: t.nav.contact },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
@@ -32,17 +35,20 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
+            <LanguageSwitcher />
           </nav>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
+          <div className="flex items-center gap-2 md:hidden">
+            <LanguageSwitcher />
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
