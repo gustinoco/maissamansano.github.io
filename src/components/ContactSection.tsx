@@ -59,7 +59,8 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Área de Atendimento</h3>
-                      <p className="text-muted-foreground">[Cidade/Região de atendimento]</p>
+                      <p className="text-muted-foreground">Ponta Porã - MS (Brasil)</p>
+                      <p className="text-muted-foreground">Pedro Juan Caballero (Paraguai)</p>
                     </div>
                   </div>
                 </CardContent>

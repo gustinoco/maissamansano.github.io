@@ -73,7 +73,7 @@ const AboutSection = () => {
                   <div>
                     <h4 className="font-semibold text-foreground">Registro Profissional</h4>
                     <p className="text-sm text-muted-foreground">
-                      CREFITO-X: XXXXX-F
+                      CREFITO 13/438865-F
                     </p>
                   </div>
                 </div>
