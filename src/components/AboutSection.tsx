@@ -1,5 +1,6 @@
 import { Award, GraduationCap, Heart, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import photoMaissa from "@/assets/photo-maissa.jpeg";
 
 const AboutSection = () => {
   const { t } = useLanguage();
@@ -20,15 +21,8 @@ const AboutSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Photo placeholder */}
             <div className="relative">
-              <div className="aspect-[4/5] bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center border border-border">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Heart className="h-16 w-16 text-primary/50" />
-                  </div>
-                  <p className="text-muted-foreground text-sm">
-                    [Foto da Dra. Maissa Mansano]
-                  </p>
-                </div>
+              <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border">
+                <img src={photoMaissa} alt="Dra. Maissa Mansano" className="w-full h-full object-cover" />
               </div>
               {/* Decorative element */}
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-xl -z-10"></div>
