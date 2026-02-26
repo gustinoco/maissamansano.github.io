@@ -1,40 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Design system for Physiotherapy website - warm, professional, caring */
+/* Editorial design system — magazine-inspired, bold typography, warm palette */
 
 @layer base {
   :root {
-    --background: 45 20% 97%;
-    --foreground: 45 30% 20%;
+    --background: 40 25% 96%;
+    --foreground: 35 40% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 45 30% 20%;
+    --card-foreground: 35 40% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 45 30% 20%;
+    --popover-foreground: 35 40% 15%;
 
-    --primary: 47 50% 45%;
+    --primary: 42 55% 42%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 25% 92%;
-    --secondary-foreground: 45 30% 20%;
+    --secondary: 40 20% 91%;
+    --secondary-foreground: 35 40% 15%;
 
-    --muted: 45 15% 92%;
-    --muted-foreground: 45 15% 45%;
+    --muted: 40 12% 90%;
+    --muted-foreground: 35 12% 48%;
 
-    --accent: 47 30% 90%;
-    --accent-foreground: 47 50% 35%;
+    --accent: 42 28% 88%;
+    --accent-foreground: 42 55% 32%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 45 20% 85%;
-    --input: 45 20% 85%;
-    --ring: 47 50% 45%;
+    --border: 40 18% 82%;
+    --input: 40 18% 82%;
+    --ring: 42 55% 42%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Source Sans 3', system-ui, sans-serif;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -47,33 +52,33 @@
   }
 
   .dark {
-    --background: 45 20% 10%;
-    --foreground: 45 15% 95%;
+    --background: 35 20% 8%;
+    --foreground: 40 12% 92%;
 
-    --card: 45 15% 13%;
-    --card-foreground: 45 15% 95%;
+    --card: 35 15% 12%;
+    --card-foreground: 40 12% 92%;
 
-    --popover: 45 15% 13%;
-    --popover-foreground: 45 15% 95%;
+    --popover: 35 15% 12%;
+    --popover-foreground: 40 12% 92%;
 
-    --primary: 47 45% 50%;
+    --primary: 42 50% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 45 15% 18%;
-    --secondary-foreground: 45 15% 95%;
+    --secondary: 35 12% 16%;
+    --secondary-foreground: 40 12% 92%;
 
-    --muted: 45 15% 18%;
-    --muted-foreground: 45 10% 60%;
+    --muted: 35 12% 16%;
+    --muted-foreground: 40 8% 55%;
 
-    --accent: 47 25% 20%;
-    --accent-foreground: 47 45% 70%;
+    --accent: 42 22% 18%;
+    --accent-foreground: 42 50% 68%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 45 15% 20%;
-    --input: 45 15% 20%;
-    --ring: 47 45% 50%;
+    --border: 35 12% 18%;
+    --input: 35 12% 18%;
+    --ring: 42 50% 48%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -93,9 +98,30 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .editorial-divider {
+    @apply w-16 h-0.5 bg-primary;
+  }
+
+  .editorial-label {
+    font-family: var(--font-body);
+    @apply uppercase tracking-[0.2em] text-xs font-semibold text-primary;
+  }
+
+  .editorial-number {
+    font-family: var(--font-display);
+    @apply text-7xl font-bold text-primary/10 absolute -top-6 -left-2 select-none;
   }
 }
