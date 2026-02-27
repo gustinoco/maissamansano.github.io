@@ -13,7 +13,7 @@ const campaignTexts = {
       "Você chegou através da nossa campanha especial! Aproveite 15% de desconto na sua primeira avaliação ou sessão.",
     cta: "Agendar com Desconto",
     whatsappMessage:
-      "Olá! Vim pela campanha especial e gostaria de agendar com o desconto de 15%.",
+      "Olá, Dra. Maissa! Vim pela campanha especial e gostaria de agendar minha sessão com o desconto de 15%. Podemos conversar?",
     dismiss: "Talvez depois",
     valid: "Válido por tempo limitado",
   },
@@ -25,13 +25,13 @@ const campaignTexts = {
       "¡Llegaste a través de nuestra campaña especial! Aprovecha un 15% de descuento en tu primera evaluación o sesión.",
     cta: "Agendar con Descuento",
     whatsappMessage:
-      "¡Hola! Vine por la campaña especial y me gustaría agendar con el descuento del 15%.",
+      "¡Hola, Dra. Maissa! Vine por la campaña especial y me gustaría agendar mi sesión con el descuento del 15%. ¿Podemos conversar?",
     dismiss: "Tal vez después",
     valid: "Válido por tiempo limitado",
   },
 };
 
-const WHATSAPP_NUMBER = "5567999999999";
+const WHATSAPP_NUMBER = "595981345476";
 
 const CampaignPopup = () => {
   const [searchParams] = useSearchParams();
