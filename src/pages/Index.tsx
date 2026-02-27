@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import CampaignPopup from "@/components/CampaignPopup";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
         <ContactSection />
         <Footer />
         <FloatingWhatsApp />
+        <CampaignPopup />
       </div>
     </LanguageProvider>
   );
