@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Clock, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -31,7 +31,6 @@ const ContactSection = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 border border-border rounded-sm overflow-hidden">
                 {[
                   { icon: Phone, title: t.contact.phone, lines: ["+595 981 345476"] },
-                  { icon: Mail, title: t.contact.email, lines: ["contato@fisiohomecare.com.br"] },
                   { icon: MapPin, title: t.contact.area, lines: ["Ponta Porã - MS (Brasil)", "Pedro Juan Caballero (Paraguai)"] },
                   { icon: Clock, title: t.contact.hours, lines: [t.contact.hoursWeekday, t.contact.hoursSaturday] },
                 ].map((item, i) => (
