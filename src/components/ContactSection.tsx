@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const ContactSection = () => {
   const { t } = useLanguage();
-  const whatsappNumber = "595981345476";
+  const whatsappNumber = "5567996569500";
   const whatsappMessage = encodeURIComponent(t.contact.whatsappMessage);
 
   return (
