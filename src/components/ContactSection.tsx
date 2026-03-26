@@ -30,7 +30,7 @@ const ContactSection = () => {
             <div className="lg:col-span-7">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 border border-border rounded-sm overflow-hidden">
                 {[
-                  { icon: Phone, title: t.contact.phone, lines: ["+55 67 99656-9500"] },
+                  { icon: Phone, title: t.contact.phone, lines: ["+55 67 99221-9746"] },
                   { icon: MapPin, title: t.contact.area, lines: ["Dourados - MS (Brasil)", "Ponta Porã - MS (Brasil)", "Pedro Juan Caballero (Paraguai)"] },
                   { icon: Clock, title: t.contact.hours, lines: [t.contact.hoursWeekday, t.contact.hoursSaturday] },
                 ].map((item, i) => (
