@@ -31,7 +31,7 @@ const campaignTexts = {
   },
 };
 
-const WHATSAPP_NUMBER = "5567996569500";
+const WHATSAPP_NUMBER = "5567992219746";
 
 const CampaignPopup = () => {
   const [searchParams] = useSearchParams();
