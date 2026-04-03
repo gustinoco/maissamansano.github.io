@@ -64,15 +64,17 @@ const ContactSection = () => {
                     size="lg"
                     variant="secondary"
                     className="w-full text-sm uppercase tracking-widest"
-                    asChild
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const url = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+                      if (typeof window.gtag_report_conversion === 'function') {
+                        window.gtag_report_conversion(url);
+                      } else {
+                        window.open(url, '_blank');
+                      }
+                    }}
                   >
-                    <a
-                      href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {t.contact.whatsappButton}
-                    </a>
+                    {t.contact.whatsappButton}
                   </Button>
                 </div>
               </ScrollReveal>

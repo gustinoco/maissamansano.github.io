@@ -50,7 +50,11 @@ const CampaignPopup = () => {
 
   const handleWhatsApp = () => {
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsappMessage)}`;
-    window.open(url, "_blank");
+    if (typeof window.gtag_report_conversion === 'function') {
+      window.gtag_report_conversion(url);
+    } else {
+      window.open(url, '_blank');
+    }
     setIsOpen(false);
   };
 
