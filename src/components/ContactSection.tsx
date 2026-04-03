@@ -67,8 +67,8 @@ const ContactSection = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       const url = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-                      if (typeof window.gtag_report_conversion === 'function') {
-                        window.gtag_report_conversion(url);
+                      if (typeof (window as any).gtag_report_conversion === 'function') {
+                        (window as any).gtag_report_conversion(url);
                       } else {
                         window.open(url, '_blank');
                       }

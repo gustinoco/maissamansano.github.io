@@ -10,8 +10,8 @@ const FloatingWhatsApp = () => {
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    if (typeof window.gtag_report_conversion === 'function') {
-      window.gtag_report_conversion(whatsappUrl);
+    if (typeof (window as any).gtag_report_conversion === 'function') {
+      (window as any).gtag_report_conversion(whatsappUrl);
     } else {
       window.open(whatsappUrl, '_blank');
     }
