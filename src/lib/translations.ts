@@ -131,7 +131,7 @@ export const translations = {
       greeting: "Olá! Sou a Dra. Maissa Mansano",
       bio1: "Sou fisioterapeuta apaixonada pelo que faço, com especialização em atendimento domiciliar e fisioterapia pélvica. Possuo múltiplas certificações e cursos avançados em saúde pélvica feminina, além de experiência comprovada com diversos casos de sucesso.",
       bio2: "Minha missão é levar tratamento de qualidade até você, no conforto do seu lar, utilizando as técnicas mais modernas e eficazes da fisioterapia — incluindo cuidados especializados para o assoalho pélvico.",
-      bio3: "Cada paciente é única, e por isso desenvolvo planos de tratamento individualizados, respeitando suas necessidades, limitações e objetivos. Da gestação ao pós-parto, da incontinência urinária ao climatério, estou preparada para cuidar de você.",
+      bio3: "Cada paciente é única, e por isso desenvolvo planos de tratamento individualizados, respeitando suas necessidades, limitações e objetivos. Da gestação ao pós-parto, da disfunção urinária ao climatério, estou preparada para cuidar de você.",
       experience: "Experiência",
       experienceValue: "Fisioterapia Home Care e Pélvica",
       registration: "Registro Profissional",
