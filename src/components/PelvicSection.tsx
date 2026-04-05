@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const pelvicIcons = [ShieldCheck, Baby, Heart, Activity, ArrowDown, Sun];
+const pelvicIcons = [ShieldCheck, Baby, Heart, Activity, Sun];
 
 const PelvicSection = () => {
   const { t } = useLanguage();

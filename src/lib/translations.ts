@@ -50,7 +50,7 @@ export const translations = {
       expertise: "Profissional com múltiplas certificações e cursos avançados em saúde pélvica feminina, com casos de sucesso comprovados.",
       items: [
         {
-          title: "Incontinência Urinária",
+          title: "Disfunção Urinária",
           description: "Tratamento para perda involuntária de urina ao tossir, espirrar, rir ou praticar exercícios.",
           details: "Fortalecimento do assoalho pélvico com técnicas manuais, biofeedback e eletroestimulação para devolver o controle e a confiança."
         },
@@ -62,17 +62,12 @@ export const translations = {
         {
           title: "Recuperação Pós-Parto",
           description: "Reabilitação do assoalho pélvico e da musculatura abdominal após o parto.",
-          details: "Tratamento de diástase abdominal, fortalecimento do períneo, prevenção de prolapsos e retorno seguro às atividades físicas."
+          details: "Tratamento de diástase abdominal, fortalecimento do períneo e retorno seguro às atividades físicas."
         },
         {
           title: "Dor Pélvica e Dispareunia",
           description: "Tratamento de dores na região pélvica e desconforto durante a relação sexual.",
           details: "Avaliação detalhada e tratamento com técnicas de relaxamento muscular, dessensibilização e reeducação perineal."
-        },
-        {
-          title: "Prolapso de Órgãos Pélvicos",
-          description: "Tratamento conservador para descida de bexiga, útero ou reto.",
-          details: "Programa de fortalecimento e reeducação muscular para sustentar os órgãos pélvicos e evitar progressão do prolapso."
         },
         {
           title: "Saúde Pélvica na Menopausa",
@@ -136,7 +131,7 @@ export const translations = {
       greeting: "Olá! Sou a Dra. Maissa Mansano",
       bio1: "Sou fisioterapeuta apaixonada pelo que faço, com especialização em atendimento domiciliar e fisioterapia pélvica. Possuo múltiplas certificações e cursos avançados em saúde pélvica feminina, além de experiência comprovada com diversos casos de sucesso.",
       bio2: "Minha missão é levar tratamento de qualidade até você, no conforto do seu lar, utilizando as técnicas mais modernas e eficazes da fisioterapia — incluindo cuidados especializados para o assoalho pélvico.",
-      bio3: "Cada paciente é única, e por isso desenvolvo planos de tratamento individualizados, respeitando suas necessidades, limitações e objetivos. Da gestação ao pós-parto, da incontinência urinária ao climatério, estou preparada para cuidar de você.",
+      bio3: "Cada paciente é única, e por isso desenvolvo planos de tratamento individualizados, respeitando suas necessidades, limitações e objetivos. Da gestação ao pós-parto, da disfunção urinária ao climatério, estou preparada para cuidar de você.",
       experience: "Experiência",
       experienceValue: "Fisioterapia Home Care e Pélvica",
       registration: "Registro Profissional",
@@ -186,7 +181,7 @@ export const translations = {
         },
         {
           question: "O que é fisioterapia pélvica e para quem é indicada?",
-          answer: "A fisioterapia pélvica é uma especialidade que trata disfunções do assoalho pélvico, como incontinência urinária, dor pélvica, preparação para o parto e recuperação pós-parto. É indicada para mulheres em todas as fases da vida — gestantes, puérperas, mulheres na menopausa e qualquer pessoa com sintomas como perda de urina ou dor na relação."
+          answer: "A fisioterapia pélvica é uma especialidade que trata disfunções do assoalho pélvico, como disfunção urinária, dor pélvica, preparação para o parto e recuperação pós-parto. É indicada para mulheres em todas as fases da vida — gestantes, puérperas, mulheres na menopausa e qualquer pessoa com sintomas como perda de urina ou dor na relação."
         },
         {
           question: "Como funciona a fisioterapia pélvica domiciliar?",
@@ -266,7 +261,7 @@ export const translations = {
       expertise: "Profesional con múltiples certificaciones y cursos avanzados en salud pélvica femenina, con casos de éxito comprobados.",
       items: [
         {
-          title: "Incontinencia Urinaria",
+          title: "Disfunción Urinaria",
           description: "Tratamiento para pérdida involuntaria de orina al toser, estornudar, reír o practicar ejercicios.",
           details: "Fortalecimiento del suelo pélvico con técnicas manuales, biofeedback y electroestimulación para devolver el control y la confianza."
         },
@@ -278,17 +273,12 @@ export const translations = {
         {
           title: "Recuperación Posparto",
           description: "Rehabilitación del suelo pélvico y la musculatura abdominal después del parto.",
-          details: "Tratamiento de diástasis abdominal, fortalecimiento del perineo, prevención de prolapsos y retorno seguro a las actividades físicas."
+          details: "Tratamiento de diástasis abdominal, fortalecimiento del perineo y retorno seguro a las actividades físicas."
         },
         {
           title: "Dolor Pélvico y Dispareunia",
           description: "Tratamiento de dolores en la región pélvica y molestia durante la relación sexual.",
           details: "Evaluación detallada y tratamiento con técnicas de relajación muscular, desensibilización y reeducación perineal."
-        },
-        {
-          title: "Prolapso de Órganos Pélvicos",
-          description: "Tratamiento conservador para descenso de vejiga, útero o recto.",
-          details: "Programa de fortalecimiento y reeducación muscular para sostener los órganos pélvicos y evitar progresión del prolapso."
         },
         {
           title: "Salud Pélvica en la Menopausia",
@@ -352,7 +342,7 @@ export const translations = {
       greeting: "¡Hola! Soy la Dra. Maissa Mansano",
       bio1: "Soy fisioterapeuta apasionada por lo que hago, con especialización en atención domiciliaria y fisioterapia pélvica. Poseo múltiples certificaciones y cursos avanzados en salud pélvica femenina, además de experiencia comprobada con diversos casos de éxito.",
       bio2: "Mi misión es llevar tratamiento de calidad hasta ti, en la comodidad de tu hogar, utilizando las técnicas más modernas y eficaces de la fisioterapia — incluyendo cuidados especializados para el suelo pélvico.",
-      bio3: "Cada paciente es única, y por eso desarrollo planes de tratamiento individualizados, respetando sus necesidades, limitaciones y objetivos. Desde la gestación al posparto, de la incontinencia urinaria al climaterio, estoy preparada para cuidarte.",
+      bio3: "Cada paciente es única, y por eso desarrollo planes de tratamiento individualizados, respetando sus necesidades, limitaciones y objetivos. Desde la gestación al posparto, de la disfunción urinaria al climaterio, estoy preparada para cuidarte.",
       experience: "Experiencia",
       experienceValue: "Fisioterapia Home Care y Pélvica",
       registration: "Registro Profesional",
@@ -402,7 +392,7 @@ export const translations = {
         },
         {
           question: "¿Qué es la fisioterapia pélvica y para quién está indicada?",
-          answer: "La fisioterapia pélvica es una especialidad que trata disfunciones del suelo pélvico, como incontinencia urinaria, dolor pélvico, preparación para el parto y recuperación posparto. Está indicada para mujeres en todas las etapas de la vida — gestantes, puérperas, mujeres en la menopausia y cualquier persona con síntomas como pérdida de orina o dolor en la relación."
+          answer: "La fisioterapia pélvica es una especialidad que trata disfunciones del suelo pélvico, como disfunción urinaria, dolor pélvico, preparación para el parto y recuperación posparto. Está indicada para mujeres en todas las etapas de la vida — gestantes, puérperas, mujeres en la menopausia y cualquier persona con síntomas como pérdida de orina o dolor en la relación."
         },
         {
           question: "¿Cómo funciona la fisioterapia pélvica domiciliaria?",
