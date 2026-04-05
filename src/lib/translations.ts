@@ -38,6 +38,49 @@ export const translations = {
       important: "Importante:",
       importantText: "O atendimento Home Care não é uma alternativa inferior à clínica — é uma escolha inteligente para quem busca conveniência, conforto e resultados. Todos os protocolos e técnicas utilizados seguem os mesmos padrões de excelência.",
     },
+    // Pelvic Physiotherapy
+    pelvic: {
+      label: "Fisioterapia Pélvica",
+      title: "Fisioterapia Pélvica Especializada",
+      subtitle: "Cuidado íntimo, profissional e humanizado para a saúde do assoalho pélvico",
+      description: "Com formação especializada e diversos cursos em fisioterapia pélvica, a Dra. Maissa Mansano oferece tratamento completo para disfunções do assoalho pélvico, atendendo mulheres em todas as fases da vida — gestação, pós-parto e climatério.",
+      whyTitle: "Por que procurar uma fisioterapeuta pélvica?",
+      whyDescription: "Muitas mulheres convivem com sintomas que poderiam ser tratados, mas não sabem que existe solução. A fisioterapia pélvica é indicada para:",
+      cta: "Agende sua avaliação pélvica",
+      expertise: "Profissional com múltiplas certificações e cursos avançados em saúde pélvica feminina, com casos de sucesso comprovados.",
+      items: [
+        {
+          title: "Incontinência Urinária",
+          description: "Tratamento para perda involuntária de urina ao tossir, espirrar, rir ou praticar exercícios.",
+          details: "Fortalecimento do assoalho pélvico com técnicas manuais, biofeedback e eletroestimulação para devolver o controle e a confiança."
+        },
+        {
+          title: "Preparação para o Parto",
+          description: "Programa completo para gestantes que desejam um parto mais seguro e consciente.",
+          details: "Técnicas de respiração, alongamento perineal, fortalecimento pélvico e orientações para facilitar o trabalho de parto e reduzir riscos de lacerações."
+        },
+        {
+          title: "Recuperação Pós-Parto",
+          description: "Reabilitação do assoalho pélvico e da musculatura abdominal após o parto.",
+          details: "Tratamento de diástase abdominal, fortalecimento do períneo, prevenção de prolapsos e retorno seguro às atividades físicas."
+        },
+        {
+          title: "Dor Pélvica e Dispareunia",
+          description: "Tratamento de dores na região pélvica e desconforto durante a relação sexual.",
+          details: "Avaliação detalhada e tratamento com técnicas de relaxamento muscular, dessensibilização e reeducação perineal."
+        },
+        {
+          title: "Prolapso de Órgãos Pélvicos",
+          description: "Tratamento conservador para descida de bexiga, útero ou reto.",
+          details: "Programa de fortalecimento e reeducação muscular para sustentar os órgãos pélvicos e evitar progressão do prolapso."
+        },
+        {
+          title: "Saúde Pélvica na Menopausa",
+          description: "Cuidados específicos para as mudanças hormonais do climatério.",
+          details: "Prevenção e tratamento de incontinência, ressecamento, fraqueza muscular e outras alterações comuns nessa fase da vida."
+        }
+      ]
+    },
     // Services
     services: {
       title: "Serviços Especializados",
