@@ -399,6 +399,14 @@ export const translations = {
         {
           question: "¿Atiende convenios o planes de salud?",
           answer: "Actualmente trabajo de forma particular, pero emito recibo detallado que puede ser utilizado para solicitar reembolso junto a tu plan de salud, si este ofrece esa opción."
+        },
+        {
+          question: "¿Qué es la fisioterapia pélvica y para quién está indicada?",
+          answer: "La fisioterapia pélvica es una especialidad que trata disfunciones del suelo pélvico, como incontinencia urinaria, dolor pélvico, preparación para el parto y recuperación posparto. Está indicada para mujeres en todas las etapas de la vida — gestantes, puérperas, mujeres en la menopausia y cualquier persona con síntomas como pérdida de orina o dolor en la relación."
+        },
+        {
+          question: "¿Cómo funciona la fisioterapia pélvica domiciliaria?",
+          answer: "La atención se realiza en la comodidad de tu casa con total privacidad. En la primera sesión, hago una evaluación completa del suelo pélvico y elaboro un plan de tratamiento personalizado. Las técnicas incluyen ejercicios de fortalecimiento, biofeedback, electroestimulación y orientaciones específicas."
         }
       ]
     },
