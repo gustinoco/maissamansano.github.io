@@ -261,7 +261,7 @@ export const translations = {
       expertise: "Profesional con múltiples certificaciones y cursos avanzados en salud pélvica femenina, con casos de éxito comprobados.",
       items: [
         {
-          title: "Incontinencia Urinaria",
+          title: "Disfunción Urinaria",
           description: "Tratamiento para pérdida involuntaria de orina al toser, estornudar, reír o practicar ejercicios.",
           details: "Fortalecimiento del suelo pélvico con técnicas manuales, biofeedback y electroestimulación para devolver el control y la confianza."
         },
@@ -273,17 +273,12 @@ export const translations = {
         {
           title: "Recuperación Posparto",
           description: "Rehabilitación del suelo pélvico y la musculatura abdominal después del parto.",
-          details: "Tratamiento de diástasis abdominal, fortalecimiento del perineo, prevención de prolapsos y retorno seguro a las actividades físicas."
+          details: "Tratamiento de diástasis abdominal, fortalecimiento del perineo y retorno seguro a las actividades físicas."
         },
         {
           title: "Dolor Pélvico y Dispareunia",
           description: "Tratamiento de dolores en la región pélvica y molestia durante la relación sexual.",
           details: "Evaluación detallada y tratamiento con técnicas de relajación muscular, desensibilización y reeducación perineal."
-        },
-        {
-          title: "Prolapso de Órganos Pélvicos",
-          description: "Tratamiento conservador para descenso de vejiga, útero o recto.",
-          details: "Programa de fortalecimiento y reeducación muscular para sostener los órganos pélvicos y evitar progresión del prolapso."
         },
         {
           title: "Salud Pélvica en la Menopausia",
