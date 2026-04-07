@@ -23,7 +23,7 @@ const FloatingWhatsApp = () => {
       onClick={handleClick}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5C] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group"
+      className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5C] text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 group hidden md:flex"
       aria-label="WhatsApp"
     >
       <MessageCircle className="h-7 w-7 fill-current" />

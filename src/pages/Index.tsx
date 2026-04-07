@@ -8,6 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import MobileWhatsAppBar from "@/components/MobileWhatsAppBar";
 import CampaignPopup from "@/components/CampaignPopup";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 
