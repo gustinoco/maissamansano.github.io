@@ -26,6 +26,7 @@ const Index = () => {
         <ContactSection />
         <Footer />
         <FloatingWhatsApp />
+        <MobileWhatsAppBar />
         <CampaignPopup />
       </div>
     </LanguageProvider>
