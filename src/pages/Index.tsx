@@ -11,8 +11,12 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import MobileWhatsAppBar from "@/components/MobileWhatsAppBar";
 import CampaignPopup from "@/components/CampaignPopup";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { useFirebaseTracking, useAutoClickTracking } from "@/hooks/useFirebaseTracking";
 
 const Index = () => {
+  useFirebaseTracking();
+  useAutoClickTracking();
+
   return (
     <LanguageProvider>
       <div className="min-h-screen">
