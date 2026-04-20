@@ -47,7 +47,7 @@ export const translations = {
       whyTitle: "Por que procurar uma fisioterapeuta pélvica?",
       whyDescription: "Muitas mulheres convivem com sintomas que poderiam ser tratados, mas não sabem que existe solução. A fisioterapia pélvica é indicada para:",
       cta: "Agende sua avaliação pélvica",
-      expertise: "Profissional com múltiplas certificações e cursos avançados em saúde pélvica feminina, com casos de sucesso comprovados.",
+      expertise: "Profissional Associada à ABFP — Associação Brasileira de Fisioterapia Pélvica, com múltiplas certificações e cursos avançados em saúde pélvica feminina, além de formação em Pilates Funcional e Contemporâneo. Casos de sucesso comprovados.",
       items: [
         {
           title: "Disfunção Urinária",
@@ -118,9 +118,9 @@ export const translations = {
           details: "Posturas terapêuticas que alongam cadeias musculares, corrigem alterações posturais e aliviam dores."
         },
         {
-          title: "Pilates Funcional",
-          description: "Exercícios adaptados para reabilitação e condicionamento.",
-          details: "Método seguro e eficaz para fortalecer o core, melhorar postura, flexibilidade e prevenir lesões."
+          title: "Pilates Funcional e Contemporâneo",
+          description: "Método com formação especializada para reabilitação e condicionamento.",
+          details: "Abordagem moderna do Pilates, focada em fortalecer o core, melhorar postura, flexibilidade e prevenir lesões de forma segura e personalizada para cada paciente."
         }
       ]
     },
@@ -129,14 +129,14 @@ export const translations = {
       title: "Sobre Mim",
       description: "Conheça a profissional por trás do atendimento Home Care.",
       greeting: "Olá! Sou a Dra. Maissa Mansano",
-      bio1: "Sou fisioterapeuta apaixonada pelo que faço, com especialização em atendimento domiciliar e fisioterapia pélvica. Possuo múltiplas certificações e cursos avançados em saúde pélvica feminina, além de experiência comprovada com diversos casos de sucesso.",
+      bio1: "Sou fisioterapeuta apaixonada pelo que faço, Associada à ABFP — Associação Brasileira de Fisioterapia Pélvica, a maior entidade nacional da especialidade. Possuo múltiplas certificações e cursos avançados em saúde pélvica feminina, formação em Pilates Funcional e Contemporâneo e experiência comprovada com diversos casos de sucesso.",
       bio2: "Minha missão é levar tratamento de qualidade até você, no conforto do seu lar, utilizando as técnicas mais modernas e eficazes da fisioterapia — incluindo cuidados especializados para o assoalho pélvico.",
       bio3: "Cada paciente é única, e por isso desenvolvo planos de tratamento individualizados, respeitando suas necessidades, limitações e objetivos. Da gestação ao pós-parto, da disfunção urinária ao climatério, estou preparada para cuidar de você.",
       experience: "Experiência",
-      experienceValue: "Fisioterapia Home Care e Pélvica",
+      experienceValue: "Home Care, Pélvica, Pilates Funcional e Contemporâneo",
       registration: "Registro Profissional",
       specialty: "Especialidades",
-      specialtyValue: "Ortopedia, Geriatria e Saúde Pélvica",
+      specialtyValue: "Saúde Pélvica (ABFP), Ortopedia, Geriatria, Pilates Funcional e Contemporâneo",
       location: "Atendimento",
       locationValue: "Dourados - MS / Ponta Porã - MS / Pedro Juan Caballero - PY",
     },
@@ -186,6 +186,10 @@ export const translations = {
         {
           question: "Como funciona a fisioterapia pélvica domiciliar?",
           answer: "O atendimento é realizado no conforto da sua casa com total privacidade. Na primeira sessão, faço uma avaliação completa do assoalho pélvico e elaboro um plano de tratamento personalizado. As técnicas incluem exercícios de fortalecimento, biofeedback, eletroestimulação e orientações específicas."
+        },
+        {
+          question: "A Dra. Maissa é associada a alguma entidade profissional?",
+          answer: "Sim! Sou Associada à ABFP — Associação Brasileira de Fisioterapia Pélvica, a maior entidade nacional da especialidade. Também sou registrada no CREFITO 13/438865-F e possuo formação em Pilates Funcional e Contemporâneo, além de diversos cursos avançados em saúde pélvica feminina."
         }
       ]
     },
@@ -208,6 +212,15 @@ export const translations = {
     footer: {
       madeWith: "Feito com",
       in: "em",
+    },
+    // Credentials Strip
+    credentials: {
+      abfpTitle: "Associada ABFP",
+      abfpDesc: "Associação Brasileira de Fisioterapia Pélvica",
+      crefitoTitle: "CREFITO 13/438865-F",
+      crefitoDesc: "Registro Profissional Ativo",
+      pilatesTitle: "Pilates Funcional e Contemporâneo",
+      pilatesDesc: "Formação Especializada",
     }
   },
   es: {
@@ -258,7 +271,7 @@ export const translations = {
       whyTitle: "¿Por qué buscar una fisioterapeuta pélvica?",
       whyDescription: "Muchas mujeres conviven con síntomas que podrían ser tratados, pero no saben que existe solución. La fisioterapia pélvica está indicada para:",
       cta: "Agenda tu evaluación pélvica",
-      expertise: "Profesional con múltiples certificaciones y cursos avanzados en salud pélvica femenina, con casos de éxito comprobados.",
+      expertise: "Profesional Asociada a la ABFP — Asociación Brasileña de Fisioterapia Pélvica, con múltiples certificaciones y cursos avanzados en salud pélvica femenina, además de formación en Pilates Funcional y Contemporáneo. Casos de éxito comprobados.",
       items: [
         {
           title: "Disfunción Urinaria",
@@ -329,9 +342,9 @@ export const translations = {
           details: "Posturas terapéuticas que estiran cadenas musculares, corrigen alteraciones posturales y alivian dolores."
         },
         {
-          title: "Pilates Funcional",
-          description: "Ejercicios adaptados para rehabilitación y acondicionamiento.",
-          details: "Método seguro y eficaz para fortalecer el core, mejorar postura, flexibilidad y prevenir lesiones."
+          title: "Pilates Funcional y Contemporáneo",
+          description: "Método con formación especializada para rehabilitación y acondicionamiento.",
+          details: "Enfoque moderno del Pilates, centrado en fortalecer el core, mejorar postura, flexibilidad y prevenir lesiones de forma segura y personalizada para cada paciente."
         }
       ]
     },
@@ -340,14 +353,14 @@ export const translations = {
       title: "Sobre Mí",
       description: "Conoce a la profesional detrás de la atención Home Care.",
       greeting: "¡Hola! Soy la Dra. Maissa Mansano",
-      bio1: "Soy fisioterapeuta apasionada por lo que hago, con especialización en atención domiciliaria y fisioterapia pélvica. Poseo múltiples certificaciones y cursos avanzados en salud pélvica femenina, además de experiencia comprobada con diversos casos de éxito.",
+      bio1: "Soy fisioterapeuta apasionada por lo que hago, Asociada a la ABFP — Asociación Brasileña de Fisioterapia Pélvica, la mayor entidad nacional de la especialidad. Poseo múltiples certificaciones y cursos avanzados en salud pélvica femenina, formación en Pilates Funcional y Contemporáneo y experiencia comprobada con diversos casos de éxito.",
       bio2: "Mi misión es llevar tratamiento de calidad hasta ti, en la comodidad de tu hogar, utilizando las técnicas más modernas y eficaces de la fisioterapia — incluyendo cuidados especializados para el suelo pélvico.",
       bio3: "Cada paciente es única, y por eso desarrollo planes de tratamiento individualizados, respetando sus necesidades, limitaciones y objetivos. Desde la gestación al posparto, de la disfunción urinaria al climaterio, estoy preparada para cuidarte.",
       experience: "Experiencia",
-      experienceValue: "Fisioterapia Home Care y Pélvica",
+      experienceValue: "Home Care, Pélvica, Pilates Funcional y Contemporáneo",
       registration: "Registro Profesional",
       specialty: "Especialidades",
-      specialtyValue: "Ortopedia, Geriatría y Salud Pélvica",
+      specialtyValue: "Salud Pélvica (ABFP), Ortopedia, Geriatría y Pilates Funcional y Contemporáneo",
       location: "Atención",
       locationValue: "Dourados - MS / Ponta Porã - MS / Pedro Juan Caballero - PY",
     },
@@ -397,6 +410,10 @@ export const translations = {
         {
           question: "¿Cómo funciona la fisioterapia pélvica domiciliaria?",
           answer: "La atención se realiza en la comodidad de tu casa con total privacidad. En la primera sesión, hago una evaluación completa del suelo pélvico y elaboro un plan de tratamiento personalizado. Las técnicas incluyen ejercicios de fortalecimiento, biofeedback, electroestimulación y orientaciones específicas."
+        },
+        {
+          question: "¿La Dra. Maissa está asociada a alguna entidad profesional?",
+          answer: "¡Sí! Soy Asociada a la ABFP — Asociación Brasileña de Fisioterapia Pélvica, la mayor entidad nacional de la especialidad. También estoy registrada en CREFITO 13/438865-F y poseo formación en Pilates Funcional y Contemporáneo, además de diversos cursos avanzados en salud pélvica femenina."
         }
       ]
     },
@@ -419,6 +436,15 @@ export const translations = {
     footer: {
       madeWith: "Hecho con",
       in: "en",
+    },
+    // Credentials Strip
+    credentials: {
+      abfpTitle: "Asociada ABFP",
+      abfpDesc: "Asociación Brasileña de Fisioterapia Pélvica",
+      crefitoTitle: "CREFITO 13/438865-F",
+      crefitoDesc: "Registro Profesional Activo",
+      pilatesTitle: "Pilates Funcional y Contemporáneo",
+      pilatesDesc: "Formación Especializada",
     }
   }
 };

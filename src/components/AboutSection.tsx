@@ -29,7 +29,7 @@ const AboutSection = () => {
                 </div>
                 {/* Caption strip */}
                 <div className="mt-4 pt-4 border-t border-border">
-                  <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Fisioterapeuta</p>
+                  <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">Fisioterapeuta · Associada ABFP</p>
                   <p className="text-sm font-semibold text-foreground">CREFITO 13/438865-F</p>
                 </div>
               </div>
