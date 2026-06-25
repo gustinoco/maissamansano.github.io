@@ -2,7 +2,8 @@ import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
-import photoMaissa from "@/assets/photo-maissa.jpeg";
+import photoMaissa520 from "@/assets/photo-maissa-520.jpeg";
+import photoMaissa760 from "@/assets/photo-maissa-760.jpeg";
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -34,7 +35,7 @@ const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-foreground leading-[0.95] tracking-tight"
             >
-              {t.hero.title}
+              {t.hero.title}{" "}
               <br />
               <span className="italic text-primary font-medium">{t.hero.titleHighlight}</span>
             </motion.h1>
@@ -58,7 +59,7 @@ const HeroSection = () => {
                 <a href="#contato">{t.hero.cta}</a>
               </Button>
               <Button size="lg" variant="outline" className="text-sm uppercase tracking-widest px-8 py-6" asChild>
-                <a href="#servicos">{t.hero.ctaSecondary}</a>
+                <a href="#laserterapia">{t.hero.ctaSecondary}</a>
               </Button>
             </motion.div>
           </div>
@@ -72,8 +73,14 @@ const HeroSection = () => {
           >
             <div className="relative aspect-[3/4] max-h-[70vh] rounded-sm overflow-hidden">
               <img
-                src={photoMaissa}
+                src={photoMaissa760}
+                srcSet={`${photoMaissa520} 403w, ${photoMaissa760} 590w`}
+                sizes="(min-width: 1024px) 40vw, 92vw"
                 alt="Dra. Maissa Mansano"
+                width="590"
+                height="760"
+                loading="eager"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 via-transparent to-transparent" />
@@ -115,7 +122,7 @@ const HeroSection = () => {
           transition={{ delay: 1.2 }}
           className="flex justify-center mt-8"
         >
-          <a href="#servicos" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="#servicos" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Ir para serviços">
             <ArrowDown className="h-5 w-5 animate-bounce" />
           </a>
         </motion.div>

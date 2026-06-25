@@ -22,6 +22,7 @@ const Footer = () => {
             <nav className="flex flex-wrap gap-6 text-xs uppercase tracking-[0.15em] opacity-60">
               <a href="#home" className="hover:opacity-100 transition-opacity">{t.nav.home}</a>
               <a href="#servicos" className="hover:opacity-100 transition-opacity">{t.nav.services}</a>
+              <a href="#laserterapia" className="hover:opacity-100 transition-opacity">{t.nav.laser}</a>
               <a href="#sobre" className="hover:opacity-100 transition-opacity">{t.nav.about}</a>
               <a href="#duvidas" className="hover:opacity-100 transition-opacity">{t.nav.faq}</a>
               <a href="#contato" className="hover:opacity-100 transition-opacity">{t.nav.contact}</a>

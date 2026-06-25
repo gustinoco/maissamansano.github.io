@@ -2,6 +2,7 @@ import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ScrollReveal from "@/components/ScrollReveal";
+import { openUrlWithConversion } from "@/lib/conversion";
 
 const ContactSection = () => {
   const { t } = useLanguage();
@@ -67,11 +68,10 @@ const ContactSection = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       const url = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-                      if (typeof (window as any).gtag_report_conversion === 'function') {
-                        (window as any).gtag_report_conversion(url);
-                      } else {
-                        window.open(url, '_blank');
-                      }
+                      openUrlWithConversion(url, {
+                        cta_location: "contact_section",
+                        cta_label: t.contact.whatsappButton,
+                      });
                     }}
                   >
                     {t.contact.whatsappButton}

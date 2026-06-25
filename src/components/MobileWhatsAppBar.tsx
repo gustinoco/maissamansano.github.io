@@ -1,5 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { openUrlWithConversion } from "@/lib/conversion";
 
 const MobileWhatsAppBar = () => {
   const { t } = useLanguage();
@@ -9,11 +10,10 @@ const MobileWhatsAppBar = () => {
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    if (typeof (window as any).gtag_report_conversion === 'function') {
-      (window as any).gtag_report_conversion(whatsappUrl);
-    } else {
-      window.open(whatsappUrl, '_blank');
-    }
+    openUrlWithConversion(whatsappUrl, {
+      cta_location: "mobile_whatsapp_bar",
+      cta_label: t.contact.whatsappButton,
+    });
   };
 
   return (

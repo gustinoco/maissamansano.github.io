@@ -1,6 +1,7 @@
 import { Award, GraduationCap, Heart, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import photoMaissa from "@/assets/photo-maissa.jpeg";
+import photoMaissa520 from "@/assets/photo-maissa-520.jpeg";
+import photoMaissa760 from "@/assets/photo-maissa-760.jpeg";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const AboutSection = () => {
@@ -25,7 +26,17 @@ const AboutSection = () => {
             <ScrollReveal direction="left" className="lg:col-span-5">
               <div className="relative">
                 <div className="aspect-[3/4] overflow-hidden rounded-sm">
-                  <img src={photoMaissa} alt="Dra. Maissa Mansano" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                  <img
+                    src={photoMaissa760}
+                    srcSet={`${photoMaissa520} 403w, ${photoMaissa760} 590w`}
+                    sizes="(min-width: 1024px) 38vw, 92vw"
+                    alt="Dra. Maissa Mansano"
+                    width="590"
+                    height="760"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  />
                 </div>
                 {/* Caption strip */}
                 <div className="mt-4 pt-4 border-t border-border">

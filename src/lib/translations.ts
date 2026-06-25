@@ -4,24 +4,25 @@ export const translations = {
     nav: {
       home: "Home",
       services: "Serviços",
+      laser: "Laserterapia",
       about: "Sobre Mim",
       faq: "Dúvidas",
       contact: "Contato",
     },
     // Hero Section
     hero: {
-      badge: "Atendimento Domiciliar Exclusivo",
-      title: "Fisioterapia no Conforto da",
-      titleHighlight: "Sua Casa",
-      description: "Tratamento fisioterapêutico personalizado e humanizado, diretamente no seu lar. Sem deslocamentos, sem filas, apenas cuidado e atenção focados em você.",
+      badge: "Fisioterapia Pélvica, Domiciliar e Laserterapia",
+      title: "Cuidado pélvico e recuperação",
+      titleHighlight: "em casa",
+      description: "Atendimento fisioterapêutico especializado para saúde íntima feminina, pós-operatório, recuperação pós-parto e cuidado de cicatrizes com recursos modernos, incluindo laserterapia de baixa intensidade quando indicada.",
       cta: "Agendar Avaliação",
-      ctaSecondary: "Conhecer Serviços",
-      benefit1Title: "No Seu Ambiente",
-      benefit1Desc: "Tratamento realizado no conforto e segurança do seu lar",
-      benefit2Title: "Atendimento Humanizado",
-      benefit2Desc: "Atenção exclusiva e personalizada durante todo o tratamento",
-      benefit3Title: "Horários Flexíveis",
-      benefit3Desc: "Agenda adaptada à sua rotina e disponibilidade",
+      ctaSecondary: "Ver Laserterapia",
+      benefit1Title: "Pós-Operatório",
+      benefit1Desc: "Cuidado para cicatrizes, tecidos e retorno funcional",
+      benefit2Title: "Saúde Pélvica",
+      benefit2Desc: "Tratamento íntimo, individualizado e baseado em avaliação",
+      benefit3Title: "Em Casa",
+      benefit3Desc: "Atendimento seguro e humanizado no seu ambiente",
     },
     // Why Home Care
     whyHomeCare: {
@@ -48,6 +49,27 @@ export const translations = {
       whyDescription: "Muitas mulheres convivem com sintomas que poderiam ser tratados, mas não sabem que existe solução. A fisioterapia pélvica é indicada para:",
       cta: "Agende sua avaliação pélvica",
       expertise: "Profissional Associada à ABFP — Associação Brasileira de Fisioterapia Pélvica, com múltiplas certificações e cursos avançados em saúde pélvica feminina, além de formação em Pilates Funcional e Contemporâneo. Casos de sucesso comprovados.",
+      laser: {
+        label: "Recurso terapêutico para cicatrização",
+        title: "Laserpulse para cicatrização e recuperação",
+        description: "A fotobiomodulação com laser de baixa intensidade pode ser incorporada ao plano de tratamento, conforme avaliação individual, para auxiliar no reparo tecidual, no cuidado de cicatrizes cirúrgicas e no conforto durante a recuperação domiciliar.",
+        imageAlt: "Equipamento Laserpulse com ponteiras e óculos de proteção",
+        note: "O uso do recurso é definido após avaliação fisioterapêutica, respeitando indicação, contraindicações, orientação médica quando houver cirurgia e objetivos de cada paciente.",
+        conditionsTitle: "Pode ser indicado para auxiliar em:",
+        approachTitle: "Como entra no tratamento:",
+        approach: "A laserterapia pode ser combinada com avaliação funcional, orientações, exercícios, terapia manual e acompanhamento da evolução da cicatriz, mobilidade dos tecidos e sintomas.",
+        features: [
+          "Cuidado de cicatrizes cirúrgicas e pós-parto",
+          "Auxílio no alívio de desconfortos, edema e sensibilidade local",
+          "Recurso complementar no atendimento domiciliar"
+        ],
+        conditions: [
+          "Cicatrizes cirúrgicas em geral",
+          "Pós-operatório ortopédico, estético ou reparador",
+          "Cesárea, episiotomia e lacerações perineais",
+          "Edema, sensibilidade, desconforto local e mobilidade da cicatriz"
+        ]
+      },
       items: [
         {
           title: "Disfunção Urinária",
@@ -113,6 +135,11 @@ export const translations = {
           details: "Equipamentos modernos para analgesia, fortalecimento muscular, regeneração tecidual e controle de edemas."
         },
         {
+          title: "Laserterapia para Cicatrização",
+          description: "Fotobiomodulação com Laserpulse para cuidado de cicatrizes e tecidos.",
+          details: "Recurso complementar para auxiliar no reparo tecidual, conforto, edema e cuidado de cicatrizes cirúrgicas, incluindo pós-operatório, cesárea, episiotomia e lacerações perineais, sempre após avaliação."
+        },
+        {
           title: "RPG - Reeducação Postural Global",
           description: "Método de correção postural e tratamento de desequilíbrios.",
           details: "Posturas terapêuticas que alongam cadeias musculares, corrigem alterações posturais e aliviam dores."
@@ -153,7 +180,7 @@ export const translations = {
         },
         {
           question: "Quais equipamentos são utilizados no atendimento?",
-          answer: "Utilizo equipamentos portáteis profissionais de alta qualidade, incluindo aparelho de Correntes Aussie, Russa, Interferencial Bipolar, TENS e FES, além de materiais para cinesioterapia e recursos para terapia manual. Tudo é higienizado antes e após cada atendimento."
+          answer: "Utilizo equipamentos portáteis profissionais de alta qualidade, incluindo aparelho de Correntes Aussie, Russa, Interferencial Bipolar, TENS e FES, Laserpulse para laserterapia de baixa intensidade quando indicado, além de materiais para cinesioterapia e recursos para terapia manual. Tudo é higienizado antes e após cada atendimento."
         },
         {
           question: "O atendimento domiciliar tem a mesma eficácia de uma clínica?",
@@ -188,6 +215,10 @@ export const translations = {
           answer: "O atendimento é realizado no conforto da sua casa com total privacidade. Na primeira sessão, faço uma avaliação completa do assoalho pélvico e elaboro um plano de tratamento personalizado. As técnicas incluem exercícios de fortalecimento, biofeedback, eletroestimulação e orientações específicas."
         },
         {
+          question: "A laserterapia ajuda na cicatrização?",
+          answer: "A laserterapia de baixa intensidade, também chamada de fotobiomodulação, pode ser usada como recurso complementar na fisioterapia para auxiliar no reparo tecidual, conforto, edema e cuidado de cicatrizes cirúrgicas. Pode ser considerada em pós-operatório, cesárea, episiotomia e lacerações perineais, sempre conforme avaliação fisioterapêutica, contraindicações e orientação médica quando houver cirurgia."
+        },
+        {
           question: "A Dra. Maissa é associada a alguma entidade profissional?",
           answer: "Sim! Sou Associada à ABFP — Associação Brasileira de Fisioterapia Pélvica, a maior entidade nacional da especialidade. Também sou registrada no CREFITO 13/438865-F e possuo formação em Pilates Funcional e Contemporâneo, além de diversos cursos avançados em saúde pélvica feminina."
         }
@@ -206,7 +237,7 @@ export const translations = {
       whatsappTitle: "Agende pelo WhatsApp",
       whatsappDesc: "A forma mais rápida e prática de agendar sua avaliação. Respondo em até 2 horas em dias úteis.",
       whatsappButton: "Enviar Mensagem",
-      whatsappMessage: "Olá! Gostaria de agendar uma avaliação de fisioterapia domiciliar.",
+      whatsappMessage: "Olá! Gostaria de agendar uma avaliação de fisioterapia pélvica, pós-operatório, cicatrização ou laserterapia.",
     },
     // Footer
     footer: {
@@ -228,24 +259,25 @@ export const translations = {
     nav: {
       home: "Inicio",
       services: "Servicios",
+      laser: "Laserterapia",
       about: "Sobre Mí",
       faq: "Preguntas",
       contact: "Contacto",
     },
     // Hero Section
     hero: {
-      badge: "Atención Domiciliaria Exclusiva",
-      title: "Fisioterapia en la Comodidad de",
-      titleHighlight: "Tu Casa",
-      description: "Tratamiento fisioterapéutico personalizado y humanizado, directamente en tu hogar. Sin desplazamientos, sin filas, solo cuidado y atención enfocados en ti.",
+      badge: "Fisioterapia Pélvica, Domiciliaria y Laserterapia",
+      title: "Cuidado pélvico y recuperación",
+      titleHighlight: "en casa",
+      description: "Atención fisioterapéutica especializada para salud íntima femenina, posoperatorio, recuperación posparto y cuidado de cicatrices con recursos modernos, incluyendo laserterapia de baja intensidad cuando esté indicada.",
       cta: "Agendar Evaluación",
-      ctaSecondary: "Conocer Servicios",
-      benefit1Title: "En Tu Ambiente",
-      benefit1Desc: "Tratamiento realizado en la comodidad y seguridad de tu hogar",
-      benefit2Title: "Atención Humanizada",
-      benefit2Desc: "Atención exclusiva y personalizada durante todo el tratamiento",
-      benefit3Title: "Horarios Flexibles",
-      benefit3Desc: "Agenda adaptada a tu rutina y disponibilidad",
+      ctaSecondary: "Ver Laserterapia",
+      benefit1Title: "Posoperatorio",
+      benefit1Desc: "Cuidado para cicatrices, tejidos y retorno funcional",
+      benefit2Title: "Salud Pélvica",
+      benefit2Desc: "Tratamiento íntimo, individualizado y basado en evaluación",
+      benefit3Title: "En Casa",
+      benefit3Desc: "Atención segura y humanizada en tu ambiente",
     },
     // Why Home Care
     whyHomeCare: {
@@ -272,6 +304,27 @@ export const translations = {
       whyDescription: "Muchas mujeres conviven con síntomas que podrían ser tratados, pero no saben que existe solución. La fisioterapia pélvica está indicada para:",
       cta: "Agenda tu evaluación pélvica",
       expertise: "Profesional Asociada a la ABFP — Asociación Brasileña de Fisioterapia Pélvica, con múltiples certificaciones y cursos avanzados en salud pélvica femenina, además de formación en Pilates Funcional y Contemporáneo. Casos de éxito comprobados.",
+      laser: {
+        label: "Recurso terapéutico para cicatrización",
+        title: "Laserpulse para cicatrización y recuperación",
+        description: "La fotobiomodulación con láser de baja intensidad puede incorporarse al plan de tratamiento, según la evaluación individual, para auxiliar en la reparación tisular, el cuidado de cicatrices quirúrgicas y el confort durante la recuperación domiciliaria.",
+        imageAlt: "Equipo Laserpulse con puntas y gafas de protección",
+        note: "El uso del recurso se define después de la evaluación fisioterapéutica, respetando indicación, contraindicaciones, orientación médica cuando hay cirugía y objetivos de cada paciente.",
+        conditionsTitle: "Puede indicarse para auxiliar en:",
+        approachTitle: "Cómo entra en el tratamiento:",
+        approach: "La laserterapia puede combinarse con evaluación funcional, orientaciones, ejercicios, terapia manual y seguimiento de la evolución de la cicatriz, movilidad de los tejidos y síntomas.",
+        features: [
+          "Cuidado de cicatrices quirúrgicas y posparto",
+          "Ayuda en el alivio de molestias, edema y sensibilidad local",
+          "Recurso complementario en la atención domiciliaria"
+        ],
+        conditions: [
+          "Cicatrices quirúrgicas en general",
+          "Posoperatorio ortopédico, estético o reparador",
+          "Cesárea, episiotomía y laceraciones perineales",
+          "Edema, sensibilidad, molestia local y movilidad de la cicatriz"
+        ]
+      },
       items: [
         {
           title: "Disfunción Urinaria",
@@ -337,6 +390,11 @@ export const translations = {
           details: "Equipos modernos para analgesia, fortalecimiento muscular, regeneración tisular y control de edemas."
         },
         {
+          title: "Laserterapia para Cicatrización",
+          description: "Fotobiomodulación con Laserpulse para cuidado de cicatrices y tejidos.",
+          details: "Recurso complementario para auxiliar en la reparación tisular, confort, edema y cuidado de cicatrices quirúrgicas, incluyendo posoperatorio, cesárea, episiotomía y laceraciones perineales, siempre después de una evaluación."
+        },
+        {
           title: "RPG - Reeducación Postural Global",
           description: "Método de corrección postural y tratamiento de desequilibrios.",
           details: "Posturas terapéuticas que estiran cadenas musculares, corrigen alteraciones posturales y alivian dolores."
@@ -377,7 +435,7 @@ export const translations = {
         },
         {
           question: "¿Qué equipos se utilizan en la atención?",
-          answer: "Utilizo equipos portátiles profesionales de alta calidad, incluyendo aparato de Corrientes Aussie, Rusa, Interferencial Bipolar, TENS y FES, además de materiales para cinesioterapia y recursos para terapia manual. Todo es higienizado antes y después de cada atención."
+          answer: "Utilizo equipos portátiles profesionales de alta calidad, incluyendo aparato de Corrientes Aussie, Rusa, Interferencial Bipolar, TENS y FES, Laserpulse para laserterapia de baja intensidad cuando esté indicada, además de materiales para cinesioterapia y recursos para terapia manual. Todo es higienizado antes y después de cada atención."
         },
         {
           question: "¿La atención domiciliaria tiene la misma eficacia que una clínica?",
@@ -412,6 +470,10 @@ export const translations = {
           answer: "La atención se realiza en la comodidad de tu casa con total privacidad. En la primera sesión, hago una evaluación completa del suelo pélvico y elaboro un plan de tratamiento personalizado. Las técnicas incluyen ejercicios de fortalecimiento, biofeedback, electroestimulación y orientaciones específicas."
         },
         {
+          question: "¿La laserterapia ayuda en la cicatrización?",
+          answer: "La laserterapia de baja intensidad, también llamada fotobiomodulación, puede utilizarse como recurso complementario en fisioterapia para auxiliar en la reparación tisular, el confort, el edema y el cuidado de cicatrices quirúrgicas. Puede considerarse en posoperatorio, cesárea, episiotomía y laceraciones perineales, siempre según evaluación fisioterapéutica, contraindicaciones y orientación médica cuando hay cirugía."
+        },
+        {
           question: "¿La Dra. Maissa está asociada a alguna entidad profesional?",
           answer: "¡Sí! Soy Asociada a la ABFP — Asociación Brasileña de Fisioterapia Pélvica, la mayor entidad nacional de la especialidad. También estoy registrada en CREFITO 13/438865-F y poseo formación en Pilates Funcional y Contemporáneo, además de diversos cursos avanzados en salud pélvica femenina."
         }
@@ -430,7 +492,7 @@ export const translations = {
       whatsappTitle: "Agenda por WhatsApp",
       whatsappDesc: "La forma más rápida y práctica de agendar tu evaluación. Respondo en hasta 2 horas en días hábiles.",
       whatsappButton: "Enviar Mensaje",
-      whatsappMessage: "¡Hola! Me gustaría agendar una evaluación de fisioterapia domiciliaria.",
+      whatsappMessage: "¡Hola! Me gustaría agendar una evaluación de fisioterapia pélvica, posoperatorio, cicatrización o laserterapia.",
     },
     // Footer
     footer: {

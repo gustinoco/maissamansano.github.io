@@ -1,26 +1,28 @@
 import { useEffect, useCallback } from "react";
-import { analytics, logEvent } from "@/lib/firebase";
+import { trackEvent } from "@/lib/analytics";
 
 /**
  * Hook que rastreia automaticamente:
- * - page_view ao montar
- * - tempo na página (engagement_time a cada 30s)
+ * - tempo na página em marcos de engajamento
  * - cliques em links/botões
  * - scroll depth (25%, 50%, 75%, 100%)
- * - seções visíveis (section_view)
+ * - seções visíveis uma vez por seção (section_view)
  */
 export const useFirebaseTracking = () => {
-  // Page view + engagement time
+  // Engagement milestones. The Google tag already collects page_view automatically.
   useEffect(() => {
-    logEvent(analytics, "page_view", {
-      page_title: document.title,
-      page_location: window.location.href,
-    });
-
     const startTime = Date.now();
+    const milestones = [30, 60, 120];
+    const reached = new Set<number>();
+
     const interval = setInterval(() => {
       const seconds = Math.round((Date.now() - startTime) / 1000);
-      logEvent(analytics, "engagement_time", { seconds });
+      milestones.forEach((milestone) => {
+        if (seconds >= milestone && !reached.has(milestone)) {
+          reached.add(milestone);
+          trackEvent("time_on_page_milestone", { seconds: milestone });
+        }
+      });
     }, 30000);
 
     return () => clearInterval(interval);
@@ -39,7 +41,7 @@ export const useFirebaseTracking = () => {
       for (const t of thresholds) {
         if (percent >= t && !reached.has(t)) {
           reached.add(t);
-          logEvent(analytics, "scroll_depth", { percent: t });
+          trackEvent("scroll_depth", { percent: t });
         }
       }
     };
@@ -52,14 +54,16 @@ export const useFirebaseTracking = () => {
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
     if (!sections.length) return;
+    const seenSections = new Set<string>();
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          const sectionId = (entry.target as HTMLElement).id;
           if (entry.isIntersecting) {
-            logEvent(analytics, "section_view", {
-              section_id: (entry.target as HTMLElement).id,
-            });
+            if (seenSections.has(sectionId)) return;
+            seenSections.add(sectionId);
+            trackEvent("section_view", { section_id: sectionId });
           }
         });
       },
@@ -72,7 +76,7 @@ export const useFirebaseTracking = () => {
 
   // Click tracking helper
   const trackClick = useCallback((eventName: string, params?: Record<string, string>) => {
-    logEvent(analytics, eventName, params);
+    trackEvent(eventName, params);
   }, []);
 
   return { trackClick };
@@ -95,20 +99,13 @@ export const useAutoClickTracking = () => {
 
       const href = el.getAttribute("href") || "";
 
-      logEvent(analytics, "element_click", {
+      trackEvent("element_click", {
         element_type: el.tagName.toLowerCase(),
         element_label: label,
         element_href: href,
         page_section: el.closest("section[id]")?.id || "unknown",
       });
 
-      // Track WhatsApp clicks specifically
-      if (href.includes("wa.me") || label.toLowerCase().includes("whatsapp")) {
-        logEvent(analytics, "whatsapp_click", {
-          element_label: label,
-          page_section: el.closest("section[id]")?.id || "unknown",
-        });
-      }
     };
 
     document.addEventListener("click", handleClick, { capture: true });

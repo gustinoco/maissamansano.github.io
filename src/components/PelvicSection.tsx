@@ -1,9 +1,12 @@
-import { Heart, Baby, ShieldCheck, Activity, ArrowDown, Flower2, Sun } from "lucide-react";
+import { Heart, Baby, ShieldCheck, Activity, Flower2, Sun, Sparkles, Target, Clock, CheckCircle2, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ScrollReveal from "@/components/ScrollReveal";
+import laserpulse480 from "@/assets/laserpulse-480.jpeg";
+import laserpulse760 from "@/assets/laserpulse-760.jpeg";
 
 const pelvicIcons = [ShieldCheck, Baby, Heart, Activity, Sun];
+const laserFeatureIcons = [Baby, Target, Clock];
 
 const PelvicSection = () => {
   const { t } = useLanguage();
@@ -34,6 +37,82 @@ const PelvicSection = () => {
               <Flower2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <p className="text-foreground font-medium leading-relaxed">
                 {t.pelvic.expertise}
+              </p>
+            </div>
+          </div>
+        </ScrollReveal>
+
+        {/* Laser therapy feature */}
+        <ScrollReveal delay={0.12}>
+          <div id="laserterapia" className="scroll-mt-28 grid grid-cols-1 lg:grid-cols-12 gap-px bg-border max-w-6xl mx-auto rounded-sm overflow-hidden mb-12">
+            <span id="laserterapia-pos-parto" className="sr-only scroll-mt-28" aria-hidden="true" />
+            <div className="lg:col-span-5 bg-card p-6 md:p-8 flex items-center justify-center">
+              <img
+                src={laserpulse760}
+                srcSet={`${laserpulse480} 478w, ${laserpulse760} 757w`}
+                sizes="(min-width: 1024px) 34vw, 88vw"
+                alt={t.pelvic.laser.imageAlt}
+                width="757"
+                height="760"
+                className="w-full max-w-md object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div className="lg:col-span-7 bg-card p-8 md:p-10">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-11 h-11 border border-primary/30 rounded-sm flex items-center justify-center">
+                  <Sparkles className="h-5 w-5 text-primary" />
+                </div>
+                <span className="editorial-label">{t.pelvic.laser.label}</span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight mb-4">
+                {t.pelvic.laser.title}
+              </h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                {t.pelvic.laser.description}
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-border rounded-sm overflow-hidden">
+                {t.pelvic.laser.features.map((feature, index) => {
+                  const IconComponent = laserFeatureIcons[index];
+                  return (
+                    <div key={feature} className="bg-background p-4">
+                      <IconComponent className="h-5 w-5 text-primary mb-3" />
+                      <p className="text-sm font-semibold text-foreground leading-snug">
+                        {feature}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div>
+                  <h4 className="text-sm uppercase tracking-[0.15em] font-semibold text-foreground mb-3">
+                    {t.pelvic.laser.conditionsTitle}
+                  </h4>
+                  <ul className="space-y-2">
+                    {t.pelvic.laser.conditions.map((condition) => (
+                      <li key={condition} className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
+                        <CheckCircle2 className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                        <span>{condition}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="border-l border-border pl-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Stethoscope className="h-4 w-4 text-primary" />
+                    <h4 className="text-sm uppercase tracking-[0.15em] font-semibold text-foreground">
+                      {t.pelvic.laser.approachTitle}
+                    </h4>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {t.pelvic.laser.approach}
+                  </p>
+                </div>
+              </div>
+              <p className="text-xs text-muted-foreground/70 leading-relaxed mt-5">
+                {t.pelvic.laser.note}
               </p>
             </div>
           </div>

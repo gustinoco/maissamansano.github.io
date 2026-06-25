@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import MobileWhatsAppBar from "@/components/MobileWhatsAppBar";
 import CampaignPopup from "@/components/CampaignPopup";
+import HashScroll from "@/components/HashScroll";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { useFirebaseTracking, useAutoClickTracking } from "@/hooks/useFirebaseTracking";
 
@@ -21,6 +22,7 @@ const Index = () => {
   return (
     <LanguageProvider>
       <div className="min-h-screen">
+        <HashScroll />
         <Header />
         <HeroSection />
         <CredentialsStrip />

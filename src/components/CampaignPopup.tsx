@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Gift, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { openUrlWithConversion } from "@/lib/conversion";
 
 const campaignTexts = {
   pt: {
@@ -50,11 +51,10 @@ const CampaignPopup = () => {
 
   const handleWhatsApp = () => {
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsappMessage)}`;
-    if (typeof (window as any).gtag_report_conversion === 'function') {
-      (window as any).gtag_report_conversion(url);
-    } else {
-      window.open(url, '_blank');
-    }
+    openUrlWithConversion(url, {
+      cta_location: "campaign_popup",
+      cta_label: t.cta,
+    });
     setIsOpen(false);
   };
 

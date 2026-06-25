@@ -1,8 +1,8 @@
-import { Home, ShieldCheck, Bone, Hand, Target, Zap, Move, Dumbbell } from "lucide-react";
+import { Home, ShieldCheck, Bone, Hand, Target, Zap, Sparkles, Move, Dumbbell } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ScrollReveal from "@/components/ScrollReveal";
 
-const serviceIcons = [Home, ShieldCheck, Bone, Hand, Target, Zap, Move, Dumbbell];
+const serviceIcons = [Home, ShieldCheck, Bone, Hand, Target, Zap, Sparkles, Move, Dumbbell];
 
 const ServicesSection = () => {
   const { t } = useLanguage();
@@ -26,7 +26,7 @@ const ServicesSection = () => {
         {/* Editorial grid — alternating large/small cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border max-w-6xl mx-auto">
           {t.services.items.map((service, index) => {
-            const IconComponent = serviceIcons[index];
+            const IconComponent = serviceIcons[index] ?? Home;
             const isLarge = index === 0 || index === 3 || index === 5 || index === 6;
             return (
               <ScrollReveal key={index} delay={index * 0.06}>

@@ -10,6 +10,8 @@ const LanguageSwitcher = () => {
         variant={language === 'pt' ? 'default' : 'ghost'}
         size="sm"
         onClick={() => setLanguage('pt')}
+        aria-label="Ver site em português"
+        aria-pressed={language === 'pt'}
         className="rounded-none h-8 px-3 text-xs font-medium"
       >
         PT
@@ -18,6 +20,8 @@ const LanguageSwitcher = () => {
         variant={language === 'es' ? 'default' : 'ghost'}
         size="sm"
         onClick={() => setLanguage('es')}
+        aria-label="Ver sitio en español"
+        aria-pressed={language === 'es'}
         className="rounded-none h-8 px-3 text-xs font-medium"
       >
         ES
