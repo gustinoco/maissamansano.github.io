@@ -1,20 +1,23 @@
 const GOOGLE_ADS_SESSION_KEY = "google_ads_visitor";
 const GOOGLE_ADS_CLICK_IDS = ["gclid", "gbraid", "wbraid"];
+const GOOGLE_TAG_DEBUG_PARAM = "gtm_debug";
 const WHATSAPP_HOSTS = new Set(["wa.me", "api.whatsapp.com"]);
 
 let isInitialized = false;
 
 /**
  * Persists only the fact that this session started from a Google Ads URL.
- * The click identifier itself is intentionally not stored.
+ * Tag Assistant sessions are also accepted so the conversion can be validated.
+ * The identifiers themselves are intentionally not stored.
  */
 function rememberGoogleAdsVisit() {
   const searchParams = new URLSearchParams(window.location.search);
   const hasGoogleAdsClickId = GOOGLE_ADS_CLICK_IDS.some((id) =>
     searchParams.has(id),
   );
+  const isGoogleTagDebugSession = searchParams.has(GOOGLE_TAG_DEBUG_PARAM);
 
-  if (hasGoogleAdsClickId) {
+  if (hasGoogleAdsClickId || isGoogleTagDebugSession) {
     sessionStorage.setItem(GOOGLE_ADS_SESSION_KEY, "true");
   }
 }
