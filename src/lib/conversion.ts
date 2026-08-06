@@ -1,4 +1,5 @@
 import { trackEvent } from "@/lib/analytics";
+import { trackWhatsappConversion } from "@/googleAdsTracking.js";
 
 interface ConversionParams {
   cta_location: string;
@@ -17,12 +18,5 @@ export const openUrlWithConversion = (url: string, params: ConversionParams) => 
   trackEvent("generate_lead", eventParams);
   trackEvent("whatsapp_click", eventParams);
 
-  const reportConversion = window.gtag_report_conversion;
-
-  if (typeof reportConversion === "function") {
-    reportConversion(url);
-    return;
-  }
-
-  window.open(url, "_blank", "noopener,noreferrer");
+  trackWhatsappConversion(url);
 };
