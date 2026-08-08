@@ -12,7 +12,7 @@ const FloatingWhatsApp = () => {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     openUrlWithConversion(whatsappUrl, {
-      cta_location: "floating_whatsapp",
+      source: "floating",
       cta_label: t.contact.whatsappButton,
     });
   };

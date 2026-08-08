@@ -11,7 +11,7 @@ const MobileWhatsAppBar = () => {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     openUrlWithConversion(whatsappUrl, {
-      cta_location: "mobile_whatsapp_bar",
+      source: "floating",
       cta_label: t.contact.whatsappButton,
     });
   };
@@ -23,7 +23,7 @@ const MobileWhatsAppBar = () => {
         onClick={handleClick}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 px-6 font-bold text-base uppercase tracking-wide shadow-[0_-4px_20px_rgba(0,0,0,0.15)] active:bg-[#20BA5C] transition-colors"
+        className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-3.5 px-4 font-bold text-sm uppercase tracking-wide shadow-[0_-4px_20px_rgba(0,0,0,0.15)] active:bg-[#20BA5C] transition-colors"
       >
         <MessageCircle className="h-6 w-6 fill-current flex-shrink-0" />
         <span>{t.contact.whatsappButton}</span>

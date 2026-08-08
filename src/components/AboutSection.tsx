@@ -1,18 +1,29 @@
-import { Award, GraduationCap, Heart, MapPin } from "lucide-react";
+import { Award, GraduationCap, Heart, MapPin, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import photoMaissa520 from "@/assets/photo-maissa-520.jpeg";
 import photoMaissa760 from "@/assets/photo-maissa-760.jpeg";
 import ScrollReveal from "@/components/ScrollReveal";
+import { Button } from "@/components/ui/button";
+import { openUrlWithConversion } from "@/lib/conversion";
 
 const AboutSection = () => {
   const { t } = useLanguage();
+  const whatsappUrl = `https://wa.me/5567992219746?text=${encodeURIComponent(t.contact.whatsappMessage)}`;
+
+  const handleWhatsApp = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    openUrlWithConversion(whatsappUrl, {
+      source: "sobre",
+      cta_label: t.about.cta,
+    });
+  };
 
   return (
-    <section id="sobre" className="py-24 bg-card relative overflow-hidden">
+    <section id="sobre" className="py-16 md:py-24 bg-card relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <div className="mb-16">
+            <div className="mb-10 md:mb-14">
               <span className="editorial-label">{t.about.title}</span>
               <div className="editorial-divider mt-3 mb-6" />
               <p className="text-lg text-muted-foreground max-w-lg">
@@ -54,11 +65,10 @@ const AboutSection = () => {
                 </h3>
 
                 <div className="space-y-5 text-muted-foreground text-lg leading-relaxed">
-                  <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:float-left first-letter:mr-3 first-letter:mt-1" style={{ fontFamily: 'var(--font-body)' }}>
+                  <p style={{ fontFamily: 'var(--font-body)' }}>
                     {t.about.bio1}
                   </p>
                   <p>{t.about.bio2}</p>
-                  <p>{t.about.bio3}</p>
                 </div>
 
                 {/* Info grid */}
@@ -78,6 +88,13 @@ const AboutSection = () => {
                     </div>
                   ))}
                 </div>
+
+                <Button size="lg" className="w-full sm:w-auto text-sm uppercase tracking-widest px-8 py-6" asChild>
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={handleWhatsApp}>
+                    <MessageCircle className="h-5 w-5" />
+                    {t.about.cta}
+                  </a>
+                </Button>
               </div>
             </ScrollReveal>
           </div>

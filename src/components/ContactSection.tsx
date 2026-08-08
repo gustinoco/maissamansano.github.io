@@ -69,7 +69,7 @@ const ContactSection = () => {
                       e.preventDefault();
                       const url = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
                       openUrlWithConversion(url, {
-                        cta_location: "contact_section",
+                        source: "footer",
                         cta_label: t.contact.whatsappButton,
                       });
                     }}

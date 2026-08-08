@@ -4,12 +4,22 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import ScrollReveal from "@/components/ScrollReveal";
 import laserpulse480 from "@/assets/laserpulse-480.jpeg";
 import laserpulse760 from "@/assets/laserpulse-760.jpeg";
+import { openUrlWithConversion } from "@/lib/conversion";
 
 const pelvicIcons = [ShieldCheck, Baby, Heart, Activity, Sun];
 const laserFeatureIcons = [Baby, Target, Clock];
 
 const PelvicSection = () => {
   const { t } = useLanguage();
+  const whatsappUrl = `https://wa.me/5567992219746?text=${encodeURIComponent(t.contact.whatsappMessage)}`;
+
+  const handleWhatsApp = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    openUrlWithConversion(whatsappUrl, {
+      source: "servicos",
+      cta_label: t.pelvic.cta,
+    });
+  };
 
   return (
     <section id="pelvica" className="py-24 bg-accent/20">
@@ -159,7 +169,9 @@ const PelvicSection = () => {
         <ScrollReveal delay={0.4}>
           <div className="mt-12 text-center">
             <Button size="lg" className="text-sm uppercase tracking-widest px-8 py-6" asChild>
-              <a href="#contato">{t.pelvic.cta}</a>
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={handleWhatsApp}>
+                {t.pelvic.cta}
+              </a>
             </Button>
           </div>
         </ScrollReveal>

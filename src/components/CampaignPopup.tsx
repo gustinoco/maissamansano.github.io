@@ -52,7 +52,7 @@ const CampaignPopup = () => {
   const handleWhatsApp = () => {
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsappMessage)}`;
     openUrlWithConversion(url, {
-      cta_location: "campaign_popup",
+      source: "campaign",
       cta_label: t.cta,
     });
     setIsOpen(false);

@@ -26,9 +26,9 @@ const Index = () => {
         <Header />
         <HeroSection />
         <CredentialsStrip />
+        <ServicesSection />
         <WhyHomeCareSection />
         <PelvicSection />
-        <ServicesSection />
         <AboutSection />
         <FAQSection />
         <ContactSection />

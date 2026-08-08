@@ -11,11 +11,12 @@ export const translations = {
     },
     // Hero Section
     hero: {
-      badge: "Fisioterapia Pélvica, Domiciliar e Laserterapia",
-      title: "Cuidado pélvico e recuperação",
-      titleHighlight: "em casa",
-      description: "Atendimento fisioterapêutico especializado para saúde íntima feminina, pós-operatório, recuperação pós-parto e cuidado de cicatrizes com recursos modernos, incluindo laserterapia de baixa intensidade quando indicada.",
-      cta: "Agendar Avaliação",
+      badge: "Fisioterapia no conforto da sua casa",
+      title: "Fisioterapia domiciliar",
+      titleHighlight: "em Dourados e Ponta Porã",
+      description: "Atendimento personalizado na sua casa para dores, reabilitação, idosos, pós-operatório e fisioterapia pélvica, com equipamentos profissionais.",
+      trustLine: "Atendimento em Dourados, Ponta Porã e região • CREFITO 13/438865-F",
+      cta: "Agendar pelo WhatsApp",
       ctaSecondary: "Ver Laserterapia",
       benefit1Title: "Pós-Operatório",
       benefit1Desc: "Cuidado para cicatrizes, tecidos e retorno funcional",
@@ -27,7 +28,7 @@ export const translations = {
     // Why Home Care
     whyHomeCare: {
       title: "Por que escolher o Home Care?",
-      description: "O atendimento domiciliar oferece vantagens únicas que potencializam os resultados do seu tratamento fisioterapêutico.",
+      description: "O atendimento domiciliar oferece praticidade e permite adaptar o cuidado à rotina e ao ambiente de cada paciente.",
       benefit1Title: "Sem Deslocamento",
       benefit1Desc: "Você não precisa enfrentar trânsito, estacionamento ou transporte público. O tratamento vem até você.",
       benefit2Title: "Ambiente Seguro",
@@ -37,7 +38,7 @@ export const translations = {
       benefit4Title: "Equipamentos Adaptados",
       benefit4Desc: "Utilizamos equipamentos portáteis profissionais, garantindo a mesma qualidade de uma clínica.",
       important: "Importante:",
-      importantText: "O atendimento Home Care não é uma alternativa inferior à clínica — é uma escolha inteligente para quem busca conveniência, conforto e resultados. Todos os protocolos e técnicas utilizados seguem os mesmos padrões de excelência.",
+      importantText: "O atendimento Home Care é uma opção para quem busca conveniência e conforto, com condutas definidas conforme a avaliação e as necessidades de cada paciente.",
     },
     // Pelvic Physiotherapy
     pelvic: {
@@ -48,7 +49,7 @@ export const translations = {
       whyTitle: "Por que procurar uma fisioterapeuta pélvica?",
       whyDescription: "Muitas mulheres convivem com sintomas que poderiam ser tratados, mas não sabem que existe solução. A fisioterapia pélvica é indicada para:",
       cta: "Agende sua avaliação pélvica",
-      expertise: "Profissional Associada à ABFP — Associação Brasileira de Fisioterapia Pélvica, com múltiplas certificações e cursos avançados em saúde pélvica feminina, além de formação em Pilates Funcional e Contemporâneo. Casos de sucesso comprovados.",
+      expertise: "Profissional Associada à ABFP — Associação Brasileira de Fisioterapia Pélvica, com cursos avançados em saúde pélvica feminina e formação em Pilates Funcional e Contemporâneo.",
       laser: {
         label: "Recurso terapêutico para cicatrização",
         title: "Laserpulse para cicatrização e recuperação",
@@ -100,65 +101,47 @@ export const translations = {
     },
     // Services
     services: {
-      title: "Serviços Especializados",
-      description: "Oferecemos uma ampla gama de tratamentos fisioterapêuticos, todos realizados no conforto da sua casa com equipamentos profissionais.",
-      notFound: "Não encontrou o serviço que precisa? Entre em contato para uma avaliação personalizada.",
+      title: "Como a fisioterapia pode ajudar",
+      description: "Atendimento domiciliar individualizado para diferentes necessidades, sempre definido após avaliação fisioterapêutica.",
+      notFound: "Não encontrou o que precisa? Converse diretamente com a fisioterapeuta.",
+      cta: "Agendar pelo WhatsApp",
       items: [
         {
-          title: "Home Care Domiciliar",
-          description: "Atendimento fisioterapêutico completo no conforto do seu lar.",
-          details: "Tratamento personalizado com toda a estrutura necessária diretamente na sua casa, proporcionando comodidade e resultados efetivos."
+          title: "Atendimento Domiciliar",
+          description: "Fisioterapia no conforto da sua casa, sem necessidade de deslocamento.",
+          details: ""
         },
         {
-          title: "Fisioterapia Preventiva e Prevenção de Quedas",
-          description: "Programa especializado para evitar acidentes e manter a autonomia.",
-          details: "Avaliação de riscos, fortalecimento muscular, treino de equilíbrio e orientações para um ambiente mais seguro."
+          title: "Fisioterapia Pélvica",
+          description: "Atendimento para saúde do assoalho pélvico, gestação, pós-parto e disfunções urinárias.",
+          details: ""
         },
         {
-          title: "Tratamento de Dores Musculoesqueléticas",
-          description: "Alívio de dores na coluna, pés, entorses e lesões diversas.",
-          details: "Técnicas manuais e recursos terapêuticos para tratar dores agudas e crônicas, restaurando a função e qualidade de vida."
+          title: "Dores e Reabilitação",
+          description: "Tratamento para dores musculares, coluna, recuperação funcional e limitações de movimento.",
+          details: ""
         },
         {
-          title: "Liberação Miofascial",
-          description: "Técnica manual para liberar tensões e aderências nos tecidos.",
-          details: "Tratamento que melhora a mobilidade, reduz dores e restaura a função muscular através de manipulação especializada."
+          title: "Fisioterapia para Idosos",
+          description: "Fortalecimento, equilíbrio, mobilidade e prevenção de quedas.",
+          details: ""
         },
         {
-          title: "Dry Needling",
-          description: "Agulhamento a seco para tratamento de pontos-gatilho.",
-          details: "Técnica eficaz para dores musculares, tensões crônicas e disfunções miofasciais utilizando agulhas finas."
-        },
-        {
-          title: "Eletroterapia",
-          description: "Correntes Aussie, Russa, Interferencial Bipolar, TENS e FES.",
-          details: "Equipamentos modernos para analgesia, fortalecimento muscular, regeneração tecidual e controle de edemas."
-        },
-        {
-          title: "Laserterapia para Cicatrização",
-          description: "Fotobiomodulação com Laserpulse para cuidado de cicatrizes e tecidos.",
-          details: "Recurso complementar para auxiliar no reparo tecidual, conforto, edema e cuidado de cicatrizes cirúrgicas, incluindo pós-operatório, cesárea, episiotomia e lacerações perineais, sempre após avaliação."
-        },
-        {
-          title: "RPG - Reeducação Postural Global",
-          description: "Método de correção postural e tratamento de desequilíbrios.",
-          details: "Posturas terapêuticas que alongam cadeias musculares, corrigem alterações posturais e aliviam dores."
-        },
-        {
-          title: "Pilates Funcional e Contemporâneo",
-          description: "Método com formação especializada para reabilitação e condicionamento.",
-          details: "Abordagem moderna do Pilates, focada em fortalecer o core, melhorar postura, flexibilidade e prevenir lesões de forma segura e personalizada para cada paciente."
+          title: "Pós-operatório e Laserterapia",
+          description: "Reabilitação e fotobiomodulação como recurso complementar conforme avaliação fisioterapêutica.",
+          details: ""
         }
       ]
     },
     // About
     about: {
-      title: "Sobre Mim",
-      description: "Conheça a profissional por trás do atendimento Home Care.",
-      greeting: "Olá! Sou a Dra. Maissa Mansano",
-      bio1: "Sou fisioterapeuta apaixonada pelo que faço, Associada à ABFP — Associação Brasileira de Fisioterapia Pélvica, a maior entidade nacional da especialidade. Possuo múltiplas certificações e cursos avançados em saúde pélvica feminina, formação em Pilates Funcional e Contemporâneo e experiência comprovada com diversos casos de sucesso.",
-      bio2: "Minha missão é levar tratamento de qualidade até você, no conforto do seu lar, utilizando as técnicas mais modernas e eficazes da fisioterapia — incluindo cuidados especializados para o assoalho pélvico.",
+      title: "Sobre Maissa Mansano",
+      description: "Cuidado profissional, próximo e planejado para cada paciente.",
+      greeting: "Atendimento fisioterapêutico individualizado",
+      bio1: "Sou Maissa Mansano, fisioterapeuta com atuação em fisioterapia pélvica, reabilitação e atendimento domiciliar.",
+      bio2: "O tratamento é planejado de acordo com as necessidades de cada paciente e realizado com acompanhamento individualizado.",
       bio3: "Cada paciente é única, e por isso desenvolvo planos de tratamento individualizados, respeitando suas necessidades, limitações e objetivos. Da gestação ao pós-parto, da disfunção urinária ao climatério, estou preparada para cuidar de você.",
+      cta: "Conversar pelo WhatsApp",
       experience: "Experiência",
       experienceValue: "Home Care, Pélvica, Pilates Funcional e Contemporâneo",
       registration: "Registro Profissional",
@@ -184,11 +167,11 @@ export const translations = {
         },
         {
           question: "O atendimento domiciliar tem a mesma eficácia de uma clínica?",
-          answer: "Sim! O atendimento Home Care segue os mesmos protocolos e padrões de qualidade de uma clínica. Além disso, o ambiente familiar pode potencializar a recuperação, pois o paciente se sente mais confortável e relaxado."
+          answer: "O atendimento Home Care é planejado após avaliação fisioterapêutica e utiliza recursos portáteis adequados a cada caso. O ambiente domiciliar também permite adaptar orientações e exercícios à rotina do paciente."
         },
         {
           question: "Qual a área de atendimento?",
-          answer: "Atendo em Ponta Porã - MS (Brasil) e Pedro Juan Caballero (Paraguai). Para verificar se sua localização está na área de cobertura, entre em contato pelo WhatsApp."
+          answer: "Atendo principalmente em Dourados e Ponta Porã - MS. Pedro Juan Caballero também faz parte da área de atendimento quando aplicável. Para verificar sua localização, entre em contato pelo WhatsApp."
         },
         {
           question: "Como é feito o pagamento?",
@@ -226,18 +209,18 @@ export const translations = {
     },
     // Contact
     contact: {
-      title: "Entre em Contato",
-      description: "Agende sua avaliação ou tire suas dúvidas. Estou pronta para ajudar você a recuperar sua qualidade de vida.",
+      title: "Precisa de fisioterapia sem sair de casa?",
+      description: "Entre em contato pelo WhatsApp para conversar sobre o atendimento e verificar disponibilidade.",
       phone: "Telefone / WhatsApp",
       email: "E-mail",
       area: "Área de Atendimento",
       hours: "Horário de Atendimento",
       hoursWeekday: "Segunda a Sexta: 8h às 18h",
       hoursSaturday: "Sábado: 8h às 12h",
-      whatsappTitle: "Agende pelo WhatsApp",
-      whatsappDesc: "A forma mais rápida e prática de agendar sua avaliação. Respondo em até 2 horas em dias úteis.",
-      whatsappButton: "Enviar Mensagem",
-      whatsappMessage: "Olá! Gostaria de agendar uma avaliação de fisioterapia pélvica, pós-operatório, cicatrização ou laserterapia.",
+      whatsappTitle: "Fale diretamente com a fisioterapeuta",
+      whatsappDesc: "Conte brevemente o que você precisa e consulte a disponibilidade para atendimento domiciliar.",
+      whatsappButton: "Falar com a fisioterapeuta",
+      whatsappMessage: "Olá, Maissa! Gostaria de conversar sobre o atendimento de fisioterapia domiciliar.",
     },
     // Footer
     footer: {
@@ -250,8 +233,12 @@ export const translations = {
       abfpDesc: "Associação Brasileira de Fisioterapia Pélvica",
       crefitoTitle: "CREFITO 13/438865-F",
       crefitoDesc: "Registro Profissional Ativo",
-      pilatesTitle: "Pilates Funcional e Contemporâneo",
-      pilatesDesc: "Formação Especializada",
+      homeTitle: "Atendimento domiciliar",
+      homeDesc: "Cuidado no conforto da sua casa",
+      equipmentTitle: "Equipamentos profissionais",
+      equipmentDesc: "Recursos conforme avaliação",
+      individualTitle: "Atendimento individualizado",
+      individualDesc: "Plano adequado a cada paciente",
     }
   },
   es: {
@@ -266,11 +253,12 @@ export const translations = {
     },
     // Hero Section
     hero: {
-      badge: "Fisioterapia Pélvica, Domiciliaria y Laserterapia",
-      title: "Cuidado pélvico y recuperación",
-      titleHighlight: "en casa",
-      description: "Atención fisioterapéutica especializada para salud íntima femenina, posoperatorio, recuperación posparto y cuidado de cicatrices con recursos modernos, incluyendo laserterapia de baja intensidad cuando esté indicada.",
-      cta: "Agendar Evaluación",
+      badge: "Fisioterapia en la comodidad de tu casa",
+      title: "Fisioterapia domiciliaria",
+      titleHighlight: "en Dourados y Ponta Porã",
+      description: "Atención personalizada en tu casa para dolores, rehabilitación, adultos mayores, posoperatorio y fisioterapia pélvica, con equipos profesionales.",
+      trustLine: "Atención en Dourados, Ponta Porã y región • CREFITO 13/438865-F",
+      cta: "Agendar por WhatsApp",
       ctaSecondary: "Ver Laserterapia",
       benefit1Title: "Posoperatorio",
       benefit1Desc: "Cuidado para cicatrices, tejidos y retorno funcional",
@@ -282,7 +270,7 @@ export const translations = {
     // Why Home Care
     whyHomeCare: {
       title: "¿Por qué elegir Home Care?",
-      description: "La atención domiciliaria ofrece ventajas únicas que potencian los resultados de tu tratamiento fisioterapéutico.",
+      description: "La atención domiciliaria ofrece practicidad y permite adaptar el cuidado a la rutina y al ambiente de cada paciente.",
       benefit1Title: "Sin Desplazamiento",
       benefit1Desc: "No necesitas enfrentar tráfico, estacionamiento o transporte público. El tratamiento viene a ti.",
       benefit2Title: "Ambiente Seguro",
@@ -292,7 +280,7 @@ export const translations = {
       benefit4Title: "Equipos Adaptados",
       benefit4Desc: "Utilizamos equipos portátiles profesionales, garantizando la misma calidad de una clínica.",
       important: "Importante:",
-      importantText: "La atención Home Care no es una alternativa inferior a la clínica — es una elección inteligente para quienes buscan conveniencia, comodidad y resultados. Todos los protocolos y técnicas utilizados siguen los mismos estándares de excelencia.",
+      importantText: "La atención Home Care es una opción para quienes buscan conveniencia y comodidad, con conductas definidas según la evaluación y las necesidades de cada paciente.",
     },
     // Pelvic Physiotherapy
     pelvic: {
@@ -303,7 +291,7 @@ export const translations = {
       whyTitle: "¿Por qué buscar una fisioterapeuta pélvica?",
       whyDescription: "Muchas mujeres conviven con síntomas que podrían ser tratados, pero no saben que existe solución. La fisioterapia pélvica está indicada para:",
       cta: "Agenda tu evaluación pélvica",
-      expertise: "Profesional Asociada a la ABFP — Asociación Brasileña de Fisioterapia Pélvica, con múltiples certificaciones y cursos avanzados en salud pélvica femenina, además de formación en Pilates Funcional y Contemporáneo. Casos de éxito comprobados.",
+      expertise: "Profesional Asociada a la ABFP — Asociación Brasileña de Fisioterapia Pélvica, con cursos avanzados en salud pélvica femenina y formación en Pilates Funcional y Contemporáneo.",
       laser: {
         label: "Recurso terapéutico para cicatrización",
         title: "Laserpulse para cicatrización y recuperación",
@@ -355,65 +343,47 @@ export const translations = {
     },
     // Services
     services: {
-      title: "Servicios Especializados",
-      description: "Ofrecemos una amplia gama de tratamientos fisioterapéuticos, todos realizados en la comodidad de tu casa con equipos profesionales.",
-      notFound: "¿No encontraste el servicio que necesitas? Contáctanos para una evaluación personalizada.",
+      title: "Cómo puede ayudar la fisioterapia",
+      description: "Atención domiciliaria individualizada para diferentes necesidades, siempre definida después de una evaluación fisioterapéutica.",
+      notFound: "¿No encontraste lo que necesitas? Habla directamente con la fisioterapeuta.",
+      cta: "Agendar por WhatsApp",
       items: [
         {
-          title: "Home Care Domiciliario",
-          description: "Atención fisioterapéutica completa en la comodidad de tu hogar.",
-          details: "Tratamiento personalizado con toda la estructura necesaria directamente en tu casa, proporcionando comodidad y resultados efectivos."
+          title: "Atención Domiciliaria",
+          description: "Fisioterapia en la comodidad de tu casa, sin necesidad de desplazamiento.",
+          details: ""
         },
         {
-          title: "Fisioterapia Preventiva y Prevención de Caídas",
-          description: "Programa especializado para evitar accidentes y mantener la autonomía.",
-          details: "Evaluación de riesgos, fortalecimiento muscular, entrenamiento de equilibrio y orientaciones para un ambiente más seguro."
+          title: "Fisioterapia Pélvica",
+          description: "Atención para la salud del suelo pélvico, embarazo, posparto y disfunciones urinarias.",
+          details: ""
         },
         {
-          title: "Tratamiento de Dolores Musculoesqueléticos",
-          description: "Alivio de dolores en columna, pies, esguinces y lesiones diversas.",
-          details: "Técnicas manuales y recursos terapéuticos para tratar dolores agudos y crónicos, restaurando la función y calidad de vida."
+          title: "Dolores y Rehabilitación",
+          description: "Tratamiento para dolores musculares, columna, recuperación funcional y limitaciones de movimiento.",
+          details: ""
         },
         {
-          title: "Liberación Miofascial",
-          description: "Técnica manual para liberar tensiones y adherencias en los tejidos.",
-          details: "Tratamiento que mejora la movilidad, reduce dolores y restaura la función muscular a través de manipulación especializada."
+          title: "Fisioterapia para Adultos Mayores",
+          description: "Fortalecimiento, equilibrio, movilidad y prevención de caídas.",
+          details: ""
         },
         {
-          title: "Dry Needling",
-          description: "Punción seca para tratamiento de puntos gatillo.",
-          details: "Técnica eficaz para dolores musculares, tensiones crónicas y disfunciones miofasciales utilizando agujas finas."
-        },
-        {
-          title: "Electroterapia",
-          description: "Corrientes Aussie, Rusa, Interferencial Bipolar, TENS y FES.",
-          details: "Equipos modernos para analgesia, fortalecimiento muscular, regeneración tisular y control de edemas."
-        },
-        {
-          title: "Laserterapia para Cicatrización",
-          description: "Fotobiomodulación con Laserpulse para cuidado de cicatrices y tejidos.",
-          details: "Recurso complementario para auxiliar en la reparación tisular, confort, edema y cuidado de cicatrices quirúrgicas, incluyendo posoperatorio, cesárea, episiotomía y laceraciones perineales, siempre después de una evaluación."
-        },
-        {
-          title: "RPG - Reeducación Postural Global",
-          description: "Método de corrección postural y tratamiento de desequilibrios.",
-          details: "Posturas terapéuticas que estiran cadenas musculares, corrigen alteraciones posturales y alivian dolores."
-        },
-        {
-          title: "Pilates Funcional y Contemporáneo",
-          description: "Método con formación especializada para rehabilitación y acondicionamiento.",
-          details: "Enfoque moderno del Pilates, centrado en fortalecer el core, mejorar postura, flexibilidad y prevenir lesiones de forma segura y personalizada para cada paciente."
+          title: "Posoperatorio y Laserterapia",
+          description: "Rehabilitación y fotobiomodulación como recurso complementario según evaluación fisioterapéutica.",
+          details: ""
         }
       ]
     },
     // About
     about: {
-      title: "Sobre Mí",
-      description: "Conoce a la profesional detrás de la atención Home Care.",
-      greeting: "¡Hola! Soy la Dra. Maissa Mansano",
-      bio1: "Soy fisioterapeuta apasionada por lo que hago, Asociada a la ABFP — Asociación Brasileña de Fisioterapia Pélvica, la mayor entidad nacional de la especialidad. Poseo múltiples certificaciones y cursos avanzados en salud pélvica femenina, formación en Pilates Funcional y Contemporáneo y experiencia comprobada con diversos casos de éxito.",
-      bio2: "Mi misión es llevar tratamiento de calidad hasta ti, en la comodidad de tu hogar, utilizando las técnicas más modernas y eficaces de la fisioterapia — incluyendo cuidados especializados para el suelo pélvico.",
+      title: "Sobre Maissa Mansano",
+      description: "Cuidado profesional, cercano y planificado para cada paciente.",
+      greeting: "Atención fisioterapéutica individualizada",
+      bio1: "Soy Maissa Mansano, fisioterapeuta con actuación en fisioterapia pélvica, rehabilitación y atención domiciliaria.",
+      bio2: "El tratamiento se planifica de acuerdo con las necesidades de cada paciente y se realiza con acompañamiento individualizado.",
       bio3: "Cada paciente es única, y por eso desarrollo planes de tratamiento individualizados, respetando sus necesidades, limitaciones y objetivos. Desde la gestación al posparto, de la disfunción urinaria al climaterio, estoy preparada para cuidarte.",
+      cta: "Conversar por WhatsApp",
       experience: "Experiencia",
       experienceValue: "Home Care, Pélvica, Pilates Funcional y Contemporáneo",
       registration: "Registro Profesional",
@@ -439,11 +409,11 @@ export const translations = {
         },
         {
           question: "¿La atención domiciliaria tiene la misma eficacia que una clínica?",
-          answer: "¡Sí! La atención Home Care sigue los mismos protocolos y estándares de calidad de una clínica. Además, el ambiente familiar puede potenciar la recuperación, ya que el paciente se siente más cómodo y relajado."
+          answer: "La atención Home Care se planifica después de una evaluación fisioterapéutica y utiliza recursos portátiles adecuados para cada caso. El ambiente domiciliario también permite adaptar orientaciones y ejercicios a la rutina del paciente."
         },
         {
           question: "¿Cuál es el área de atención?",
-          answer: "Atiendo en Ponta Porã - MS (Brasil) y Pedro Juan Caballero (Paraguay). Para verificar si tu ubicación está en el área de cobertura, contáctame por WhatsApp."
+          answer: "Atiendo principalmente en Dourados y Ponta Porã - MS. Pedro Juan Caballero también forma parte del área de atención cuando corresponda. Para verificar tu ubicación, contáctame por WhatsApp."
         },
         {
           question: "¿Cómo se realiza el pago?",
@@ -481,18 +451,18 @@ export const translations = {
     },
     // Contact
     contact: {
-      title: "Contáctanos",
-      description: "Agenda tu evaluación o resuelve tus dudas. Estoy lista para ayudarte a recuperar tu calidad de vida.",
+      title: "¿Necesitas fisioterapia sin salir de casa?",
+      description: "Contáctame por WhatsApp para conversar sobre la atención y consultar disponibilidad.",
       phone: "Teléfono / WhatsApp",
       email: "E-mail",
       area: "Área de Atención",
       hours: "Horario de Atención",
       hoursWeekday: "Lunes a Viernes: 8h a 18h",
       hoursSaturday: "Sábado: 8h a 12h",
-      whatsappTitle: "Agenda por WhatsApp",
-      whatsappDesc: "La forma más rápida y práctica de agendar tu evaluación. Respondo en hasta 2 horas en días hábiles.",
-      whatsappButton: "Enviar Mensaje",
-      whatsappMessage: "¡Hola! Me gustaría agendar una evaluación de fisioterapia pélvica, posoperatorio, cicatrización o laserterapia.",
+      whatsappTitle: "Habla directamente con la fisioterapeuta",
+      whatsappDesc: "Cuéntame brevemente lo que necesitas y consulta la disponibilidad para atención domiciliaria.",
+      whatsappButton: "Hablar con la fisioterapeuta",
+      whatsappMessage: "¡Hola, Maissa! Me gustaría conversar sobre la atención de fisioterapia domiciliaria.",
     },
     // Footer
     footer: {
@@ -505,8 +475,12 @@ export const translations = {
       abfpDesc: "Asociación Brasileña de Fisioterapia Pélvica",
       crefitoTitle: "CREFITO 13/438865-F",
       crefitoDesc: "Registro Profesional Activo",
-      pilatesTitle: "Pilates Funcional y Contemporáneo",
-      pilatesDesc: "Formación Especializada",
+      homeTitle: "Atención domiciliaria",
+      homeDesc: "Cuidado en la comodidad de tu casa",
+      equipmentTitle: "Equipos profesionales",
+      equipmentDesc: "Recursos según evaluación",
+      individualTitle: "Atención individualizada",
+      individualDesc: "Plan adecuado para cada paciente",
     }
   }
 };
